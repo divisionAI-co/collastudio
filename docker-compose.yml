@@ -1,0 +1,59 @@
+services:
+  nestjs:
+    build:
+      context: .
+      target: development
+    container_name: nestjs_app
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: callstudio
+      DB_PASSWORD: callstudio
+      DB_NAME: callstudio
+    depends_on:
+      - db
+    restart: unless-stopped
+    volumes:
+      # Mount source code for hot reloading
+      - ./src:/app/src
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./nest-cli.json:/app/nest-cli.json
+      # Prevent overwriting node_modules
+      - /app/node_modules
+    command: npm run start:dev
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    container_name: callstudio_web
+    ports:
+      # host:container
+      - "3001:3001"
+    environment:
+      NODE_ENV: development
+    volumes:
+      # Mount source code for hot reloading
+      - ./web:/app
+      # Prevent overwriting node_modules
+      - /app/node_modules
+      - /app/.next
+
+  db:
+    image: postgres:16-alpine
+    container_name: callstudio_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: callstudio
+      POSTGRES_PASSWORD: callstudio
+      POSTGRES_DB: callstudio
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
