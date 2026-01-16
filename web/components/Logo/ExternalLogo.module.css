@@ -1,0 +1,16 @@
+.externalLogo {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.logoWrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.logoImage {
+  display: block;
+  max-width: none;
+}
