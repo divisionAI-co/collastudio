@@ -3,22 +3,22 @@
 import React from 'react';
 import styles from './Logo.module.css';
 
-// Figma asset URLs (valid for 7 days)
+// Local logo assets
 const logoAssets = {
   // Logo + Payoff
-  logoPayoffDefault: 'https://www.figma.com/api/mcp/asset/186747c4-42dc-44ce-85b4-98eaacdc8ec6',
-  logoPayoffDark: 'https://www.figma.com/api/mcp/asset/33e182ab-0565-41c9-94cd-0ee5f27e661e',
+  logoPayoffDefault: '/assets/logos/figma/Logo/logoPayoffDefault.svg',
+  logoPayoffDark: '/assets/logos/figma/Logo/logoPayoffDark.svg',
   
   // Logo only
-  logoDefault: 'https://www.figma.com/api/mcp/asset/6cf693ba-4152-4e92-a3de-88f0dbfe0ee1',
-  logoDark: 'https://www.figma.com/api/mcp/asset/088610f4-3c0b-451b-9a79-548dc3187445',
+  logoDefault: '/assets/logos/figma/Logo/logoDefault.svg',
+  logoDark: '/assets/logos/figma/Logo/logoDark.svg',
   
   // Only type
-  onlyType: 'https://www.figma.com/api/mcp/asset/e749943b-deaf-4457-bbef-28c9dd5b20ac',
+  onlyType: '/assets/logos/figma/Logo/onlyType.svg',
   
   // Icon
-  iconDefault: 'https://www.figma.com/api/mcp/asset/7199e588-7040-46e0-829c-d4871834208f',
-  iconDark: 'https://www.figma.com/api/mcp/asset/a06f1f8d-fe80-4493-bc69-bbe20eea4256',
+  iconDefault: '/assets/logos/figma/Logo/iconDefault.svg',
+  iconDark: '/assets/logos/figma/Logo/iconDark.svg',
 };
 
 export type LogoVariant = 'logoPayoff' | 'logo' | 'icon' | 'onlyType';

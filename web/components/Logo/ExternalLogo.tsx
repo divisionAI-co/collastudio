@@ -3,19 +3,19 @@
 import React from 'react';
 import styles from './ExternalLogo.module.css';
 
-// Figma asset URLs (valid for 7 days)
+// Local external logo assets
 const externalLogoAssets = {
   // Media type
-  mediaTelevisionDeGalicia: 'https://www.figma.com/api/mcp/asset/9f656552-67c5-4086-86eb-d084919d826f',
-  mediaLaRepubblica: 'https://www.figma.com/api/mcp/asset/cd8b26c7-febb-456c-8921-bef2266deae7',
-  mediaMeridianiCammini: 'https://www.figma.com/api/mcp/asset/9c48f996-0f0c-4464-959e-759c8dc32191',
-  mediaCorriereDellaSera: 'https://www.figma.com/api/mcp/asset/b8a15630-0dc9-486f-a8ba-365117953dea',
+  mediaTelevisionDeGalicia: '/assets/logos/figma/ExternalLogo/mediaTelevisionDeGalicia.png',
+  mediaLaRepubblica: '/assets/logos/figma/ExternalLogo/mediaLaRepubblica.png',
+  mediaMeridianiCammini: '/assets/logos/figma/ExternalLogo/mediaMeridianiCammini.png',
+  mediaCorriereDellaSera: '/assets/logos/figma/ExternalLogo/mediaCorriereDellaSera.png',
   
-  // Certification type - Using latest asset URLs from Figma
-  certificationCalidadTuristica: 'https://www.figma.com/api/mcp/asset/7ce861da-6527-4c36-b456-5a7b98664b40',
-  certificationJapanEndlessDiscovery: 'https://www.figma.com/api/mcp/asset/70333ba1-ec13-4603-8971-b4267183ab82',
-  certificationEccellenzeInDigitale: 'https://www.figma.com/api/mcp/asset/281c8557-80ea-419d-8551-6d7211ed54b4',
-  certificationTelevisionDeGalicia: 'https://www.figma.com/api/mcp/asset/c6abd8d6-c184-414f-9727-88683d43d640',
+  // Certification type
+  certificationCalidadTuristica: '/assets/logos/figma/ExternalLogo/certificationCalidadTuristica.jpg',
+  certificationJapanEndlessDiscovery: '/assets/logos/figma/ExternalLogo/certificationJapanEndlessDiscovery.png',
+  certificationEccellenzeInDigitale: '/assets/logos/figma/ExternalLogo/certificationEccellenzeInDigitale.jpg',
+  certificationTelevisionDeGalicia: '/assets/logos/figma/ExternalLogo/certificationTelevisionDeGalicia.png',
 };
 
 export type ExternalLogoType = 'Media' | 'Certification';
