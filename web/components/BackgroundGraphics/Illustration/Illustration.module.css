@@ -1,0 +1,128 @@
+.illustration {
+  position: relative;
+}
+
+.image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Freedom variant */
+.livello2 {
+  position: absolute;
+  inset: 0.19% 1.15% 0.29% 3.45%;
+}
+
+.livello2Inner {
+  position: absolute;
+  inset: -0.31% -0.3%;
+}
+
+/* 24H variant */
+.vector24H {
+  position: absolute;
+  inset: 33.23% 39.34% 32.25% 39.35%;
+}
+
+.vector24H2 {
+  position: absolute;
+  inset: 0.19%;
+}
+
+.vector24H2Inner {
+  position: absolute;
+  inset: -0.31%;
+}
+
+.vector24H3 {
+  position: absolute;
+  inset: 12.03%;
+}
+
+.vector24H3Inner {
+  position: absolute;
+  inset: -0.41%;
+}
+
+.vector24H4 {
+  position: absolute;
+  inset: 9.49% 47.46% 85.43% 47.46%;
+}
+
+.vector24H5 {
+  position: absolute;
+  inset: 46.75% 9.49% 48.17% 85.43%;
+}
+
+.vector24H6 {
+  position: absolute;
+  inset: 46.75% 85.43% 48.17% 9.49%;
+}
+
+.vector24H7 {
+  position: absolute;
+  inset: 85.43% 47.46% 9.49% 47.46%;
+}
+
+/* Itineraries variant */
+.vectorItineraries {
+  position: absolute;
+  inset: 56.65% 46.81% 0.04% 5.26%;
+}
+
+.vectorItinerariesInner {
+  position: absolute;
+  inset: -0.74% -0.58% -0.16% -0.63%;
+}
+
+.vectorItineraries2 {
+  position: absolute;
+  inset: 56.21% 1.14% 32.75% 0.1%;
+}
+
+.vectorItineraries2Inner {
+  position: absolute;
+  inset: -2.89% -0.19% -2.5% -0.16%;
+}
+
+.vectorItineraries3 {
+  position: absolute;
+  inset: 37.38% 44.9% 41.17% 0.18%;
+}
+
+.vectorItineraries3Inner {
+  position: absolute;
+  inset: -1.48% -0.52% -0.55% -0.11%;
+}
+
+.vectorItineraries4 {
+  position: absolute;
+  inset: 23.02% 0.05% 61.09% 12.38%;
+}
+
+.vectorItineraries4Inner {
+  position: absolute;
+  inset: -2.01% -0.08% -1.95% -0.08%;
+}
+
+.vectorItineraries5 {
+  position: absolute;
+  inset: 15.13% 1.96% 69.42% 77.99%;
+}
+
+.vectorItineraries5Inner {
+  position: absolute;
+  inset: -1.61% -0.96% -1.39% -1.13%;
+}
+
+.vectorItineraries6 {
+  position: absolute;
+  inset: 0.19% 72.79% 73.74% 2.12%;
+}
+
+.vectorItineraries6Inner {
+  position: absolute;
+  inset: -1.22%;
+}
