@@ -1,0 +1,72 @@
+.paymentMethodIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 40px;
+  border: 1px solid #f2f4f7;
+  border-radius: 6px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.amex {
+  background: #1f72cd;
+}
+
+.cb {
+  background: #399ef2;
+}
+
+.mastercardContainer {
+  position: absolute;
+  inset: calc(20.96% - 1px) calc(18.51% - 1px) calc(23.21% - 1px) calc(17.24% - 1px);
+}
+
+.visaContainer {
+  position: absolute;
+  inset: calc(33.75% - 1px) calc(17.81% - 1px) calc(33.67% - 1px) calc(13.79% - 1px);
+}
+
+.amexContainer {
+  position: absolute;
+  inset: calc(35.42% - 1px) calc(10.63% - 1px) calc(34.35% - 1px) calc(8.38% - 1px);
+}
+
+.applePayContainer {
+  position: absolute;
+  inset: calc(29.17% - 1px) calc(13.22% - 1px) calc(27.42% - 1px) calc(14.37% - 1px);
+}
+
+.googlePayContainer {
+  position: absolute;
+  inset: calc(32.11% - 1px) calc(16.26% - 1px) calc(26.22% - 1px) calc(13.95% - 1px);
+  display: contents;
+}
+
+.googlePayPay {
+  position: absolute;
+  inset: 34.51% 16.26% 26.22% 43.51%;
+}
+
+.googlePayG {
+  position: absolute;
+  inset: 32.11% 62.95% 33.23% 13.95%;
+}
+
+.cbContainer {
+  position: absolute;
+  width: 42px;
+  height: 20.968px;
+  left: 50%;
+  top: calc(50% + 0.48px);
+  transform: translate(-50%, -50%);
+}
+
+.paymentImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
