@@ -1,0 +1,31 @@
+---
+name: master-prompt
+description: This is a new rule
+---
+
+# Overview
+Rules:
+- Do NOT flatten or merge components
+- Preserve the Figma layer hierarchy
+- Each Frame or Group = one React component
+- Nested layers = child components
+- Use composition, not one large component
+
+Styling:
+- Match Figma values exactly (colors, spacing, typography)
+- Extract repeated colors into CSS variables
+- Use flexbox or grid where possible
+
+Code:
+- Use semantic HTML
+- Components must be reusable
+- Keep components small and readable
+- Do not over-optimize or guess missing design
+
+Storybook Rule:
+
+- This project uses Storybook to develop and verify UI components.
+- Every UI component must have a corresponding Storybook story.
+- Components must be built and validated in isolation, not inside pages.
+- Do not rely on application pages to test or style components.
+- Stories should represent the component’s default and key states only.

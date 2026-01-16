@@ -1,0 +1,73 @@
+.filterButton {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 5px;
+  width: 297px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.starRating {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.starRating svg {
+  width: 6.462px;
+  height: 7px;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.stateOn {
+  background: #f4f097;
+  color: #2b2a26;
+}
+
+.stateOn .label {
+  color: #2b2a26;
+}
+
+.stateOff {
+  background: transparent;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  color: #2b2a26;
+}
+
+.stateOff .label {
+  color: #2b2a26;
+}
+
+.stateDisabled {
+  background: transparent;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stateDisabled .label {
+  color: #9b9b99;
+}
+
+.filterButton:not(.stateDisabled):hover {
+  opacity: 0.9;
+}

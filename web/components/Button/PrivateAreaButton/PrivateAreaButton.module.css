@@ -1,0 +1,135 @@
+.privateAreaButton {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 50px;
+  backdrop-filter: blur(16.5px);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.buttonActive {
+  background: #f7fdfb;
+}
+
+.buttonInactive {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  padding: 3px;
+  border-radius: 100px;
+}
+
+.icon svg {
+  width: 11.375px;
+  height: 13px;
+}
+
+.userName {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.active .button {
+  width: 131px;
+  height: 47px;
+}
+
+.inactive .button {
+  width: 131px;
+  height: 47px;
+}
+
+.typeNoLog .button {
+  width: 47px;
+  height: 47px;
+}
+
+.buttonNoLog {
+  width: 47px !important;
+  height: 47px !important;
+}
+
+.dropdown {
+  background: #f7fdfb;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 131px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 1000;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(38, 38, 34, 0.2);
+  cursor: pointer;
+  width: 100%;
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.menuItem .icon {
+  width: 17px;
+  height: 17px;
+  padding: 3px;
+}
+
+.menuItem .icon svg {
+  width: 13.016px;
+  height: 11.387px;
+}
+
+.menuItem .label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #2b2a26;
+}
+
+.menuItem:hover {
+  background: rgba(38, 38, 34, 0.05);
+}
+
+.button:hover {
+  opacity: 0.9;
+}

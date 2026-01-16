@@ -1,0 +1,71 @@
+.menuVoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(12px);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.label {
+  color: #f7fdfb;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+}
+
+.icon svg {
+  width: 8.138px;
+  height: 8.125px;
+}
+
+/* State Off */
+.stateOff {
+  background: transparent;
+  cursor: default;
+}
+
+.stateOff:hover {
+  cursor: pointer;
+}
+
+/* State Over */
+.stateOver {
+  background: rgba(38, 38, 34, 0.2);
+}
+
+.stateOver:hover {
+  background: rgba(38, 38, 34, 0.3);
+}
+
+/* State On */
+.stateOn {
+  background: rgba(38, 38, 34, 0.2);
+  border: 1px solid #2b2a26;
+}
+
+.stateOn .icon svg path {
+  fill: #2b2a26;
+}
+
+.stateOn .label {
+  color: #2b2a26;
+}

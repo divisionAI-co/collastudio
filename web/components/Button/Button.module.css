@@ -1,0 +1,238 @@
+/* Base button styles */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Icon styles */
+.iconLeft,
+.iconRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  padding: 3px;
+  border-radius: 100px;
+}
+
+.iconLeft svg,
+.iconRight svg {
+  width: 11.375px;
+  height: 13px;
+}
+
+/* Label styles */
+.label {
+  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/* Main button type */
+.typeMain {
+  padding: 15px;
+  border-radius: 50px;
+}
+
+/* Secondary button type */
+.typeSecondary {
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Tertiary button type */
+.typeTertiary {
+  height: 40px;
+  padding: 10px 0;
+  gap: 5px;
+  background: transparent;
+  border: none;
+}
+
+/* White color variants */
+.colorWhite.typeMain.stateOff {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(16.5px);
+}
+
+.colorWhite.typeMain.stateOn {
+  background: #f7fdfb;
+  border: 1px solid #f7fdfb;
+}
+
+.colorWhite.typeSecondary.stateOff {
+  background: #f7fdfb;
+  border: 1px solid #f7fdfb;
+}
+
+.colorWhite.typeSecondary.stateOn {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #f7fdfb;
+  backdrop-filter: blur(16.5px);
+}
+
+.colorWhite.typeTertiary.stateOff .label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #f7fdfb;
+}
+
+.colorWhite.typeTertiary.stateOn .label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 8px;
+  height: 1px;
+  background: #f7fdfb;
+}
+
+/* Yellow color variants */
+.colorYellow.typeMain.stateOff {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(244, 240, 151, 0.4);
+  backdrop-filter: blur(16.5px);
+}
+
+.colorYellow.typeMain.stateOn {
+  background: #f4f097;
+  border: 1px solid #f4f097;
+}
+
+.colorYellow.typeSecondary.stateOff {
+  background: #f4f097;
+  border: 1px solid #f4f097;
+}
+
+.colorYellow.typeSecondary.stateOn {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(244, 240, 151, 0.4);
+  backdrop-filter: blur(16.5px);
+}
+
+.colorYellow.typeTertiary.stateOff .label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #f4f097;
+}
+
+.colorYellow.typeTertiary.stateOn .label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 8px;
+  height: 1px;
+  background: #f4f097;
+}
+
+/* Black color variants */
+.colorBlack.typeMain.stateOff {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  backdrop-filter: blur(16.5px);
+}
+
+.colorBlack.typeMain.stateOn {
+  background: #2b2a26;
+  border: 1px solid #2b2a26;
+}
+
+.colorBlack.typeSecondary.stateOff {
+  background: #2b2a26;
+  border: 1px solid rgba(38, 38, 34, 0.4);
+}
+
+.colorBlack.typeSecondary.stateOn {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  backdrop-filter: blur(16.5px);
+}
+
+.colorBlack.typeTertiary.stateOff .label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2b2a26;
+}
+
+.colorBlack.typeTertiary.stateOn .label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 8px;
+  height: 1px;
+  background: #2b2a26;
+}
+
+/* Tertiary underline fix */
+.typeTertiary {
+  position: relative;
+  flex-direction: column;
+}
+
+.typeTertiary .label {
+  position: relative;
+  display: inline-block;
+}
+
+/* Disabled state */
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  opacity: 0.5;
+}
+
+/* Hover effects */
+.button:not(.disabled):hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.button:not(.disabled):active {
+  transform: translateY(0);
+}

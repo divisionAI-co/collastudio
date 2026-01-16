@@ -1,0 +1,53 @@
+.fatMenuVoice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  gap: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  color: #2b2a26;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0;
+  color: #2b2a26;
+}
+
+.number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #2b2a26;
+}
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2b2a26;
+}
+
+.fatMenuVoice:hover .label,
+.fatMenuVoice:hover .number {
+  opacity: 0.8;
+}

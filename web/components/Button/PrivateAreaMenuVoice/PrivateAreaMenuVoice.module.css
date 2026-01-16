@@ -1,0 +1,49 @@
+.privateAreaMenuVoice {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(38, 38, 34, 0.2);
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  padding: 3px;
+  border-radius: 100px;
+}
+
+.icon svg {
+  width: 11.375px;
+  height: 13px;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #2b2a26;
+}
+
+.active {
+  background: rgba(38, 38, 34, 0.2);
+}
+
+.inactive {
+  background: transparent;
+}
+
+.privateAreaMenuVoice:hover {
+  background: rgba(38, 38, 34, 0.1);
+}

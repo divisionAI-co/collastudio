@@ -11,14 +11,14 @@ import {
   PrivateAreaButton,
   FilterButton,
   RoundedCTA,
-} from '../components/Button';
+} from '../../../components/Button';
 import styles from './page.module.css';
 
-export default function HomePage() {
+export default function ButtonsStorybookPage() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h1 className={styles.title}>CallStudio Button System</h1>
+        <h1 className={styles.title}>Button Storybook</h1>
         <p className={styles.subtitle}>Complete design system buttons from Figma</p>
 
         {/* CTA Buttons Section */}

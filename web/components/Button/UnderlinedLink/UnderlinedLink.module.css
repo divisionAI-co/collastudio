@@ -1,0 +1,45 @@
+.underlinedLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #2b2a26;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2b2a26;
+}
+
+.active .underline {
+  height: 1px;
+}
+
+.inactive .underline {
+  height: 1px;
+  opacity: 0.5;
+}
+
+.underlinedLink:hover .text {
+  opacity: 0.8;
+}

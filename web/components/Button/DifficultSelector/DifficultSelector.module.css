@@ -1,0 +1,69 @@
+.difficultSelector {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  width: 297px;
+}
+
+.difficultyButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 40px;
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 0 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #2b2a26;
+}
+
+.starRating {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.starRating svg {
+  width: 6.462px;
+  height: 7px;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #2b2a26;
+  text-align: left;
+}
+
+.selected {
+  background: #f4f097;
+}
+
+.unselected {
+  background: #f7fdfb;
+}
+
+.first {
+  border-radius: 5px 0 0 5px;
+}
+
+.last {
+  border-radius: 0 5px 5px 0;
+}
+
+.difficultyButton:hover {
+  opacity: 0.9;
+}
