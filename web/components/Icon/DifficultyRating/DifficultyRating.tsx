@@ -3,11 +3,11 @@
 import React from 'react';
 import styles from './DifficultyRating.module.css';
 
-// Figma asset URLs (valid for 7 days)
-const imgStarFilled = 'https://www.figma.com/api/mcp/asset/2437c246-4129-477a-a1cb-dded2c8e5ca4';
-const imgStarEmpty = 'https://www.figma.com/api/mcp/asset/4cb733dc-79a6-446f-a0bc-ed2db5ed7999';
-const imgStarEasy = 'https://www.figma.com/api/mcp/asset/2982537b-d43f-4c25-a0f1-ab655a94ef07';
-const imgStarEasyEmpty = 'https://www.figma.com/api/mcp/asset/b3605a4f-657a-4224-9c69-f324bcd7b148';
+// Local icon assets
+const imgStarFilled = '/assets/icons/figma/DifficultyRating/imgStarFilled.svg';
+const imgStarEmpty = '/assets/icons/figma/DifficultyRating/imgStarEmpty.svg';
+const imgStarEasy = '/assets/icons/figma/DifficultyRating/imgStarEasy.svg';
+const imgStarEasyEmpty = '/assets/icons/figma/DifficultyRating/imgStarEasyEmpty.svg';
 
 export type Difficulty = 'Easy' | 'Mid' | 'Hard';
 

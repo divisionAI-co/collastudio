@@ -3,22 +3,22 @@
 import React from 'react';
 import styles from './Flag.module.css';
 
-// Figma asset URLs (valid for 7 days)
-const imgFlagITA = 'https://www.figma.com/api/mcp/asset/c1ff7579-a570-44a7-a93f-4767552a878c';
-const imgFlagFRA = 'https://www.figma.com/api/mcp/asset/5c0e02c0-ee93-477f-828c-06047f601502';
-const imgFlagDEUContents = 'https://www.figma.com/api/mcp/asset/7fbbfca1-640e-4994-a4fc-df54ee75a959';
-const imgFlagDEUContents1 = 'https://www.figma.com/api/mcp/asset/85ac1a04-4cd1-402e-bb18-aa12f1de75dd';
-const imgFlagESPBackground = 'https://www.figma.com/api/mcp/asset/4281d0a9-d4aa-4e5b-add5-5f0a0c8b9cb4';
-const imgFlagESPBackground1 = 'https://www.figma.com/api/mcp/asset/4bb008c6-344d-4cda-80b0-3362b9f1d677';
-const imgFlagESPTop = 'https://www.figma.com/api/mcp/asset/1b656034-81b7-4427-a69c-ddd38e675cdc';
-const imgFlagESPTop1 = 'https://www.figma.com/api/mcp/asset/bad7daf3-7eef-410c-a75c-36cd0284ab56';
-const imgFlagESPPillars = 'https://www.figma.com/api/mcp/asset/24d70e0c-12c0-49e7-b2e8-1b35d0348d78';
-const imgFlagESPCrown = 'https://www.figma.com/api/mcp/asset/d2decb17-2877-4c43-80f0-e3f9b1f22918';
-const imgFlagESPShield = 'https://www.figma.com/api/mcp/asset/b8122e5d-8f71-499f-9557-d9dd6ea07a0e';
-const imgFlagENGVector = 'https://www.figma.com/api/mcp/asset/a7c440f1-9f2e-4075-8878-44bb9048a99e';
-const imgFlagENGVector1 = 'https://www.figma.com/api/mcp/asset/ae2683c4-3592-44da-99dc-84e45a53de1b';
-const imgFlagENGGroup = 'https://www.figma.com/api/mcp/asset/7bade694-b53e-4341-9a8c-62e6beac3668';
-const imgFlagENGGroup1 = 'https://www.figma.com/api/mcp/asset/2a1d997d-9bbb-448a-9be4-21fe29e26ac0';
+// Local icon assets
+const imgFlagITA = '/assets/icons/figma/Flag/imgFlagITA.svg';
+const imgFlagFRA = '/assets/icons/figma/Flag/imgFlagFRA.svg';
+const imgFlagDEUContents = '/assets/icons/figma/Flag/imgFlagDEUContents.svg';
+const imgFlagDEUContents1 = '/assets/icons/figma/Flag/imgFlagDEUContents1.svg';
+const imgFlagESPBackground = '/assets/icons/figma/Flag/imgFlagESPBackground.svg';
+const imgFlagESPBackground1 = '/assets/icons/figma/Flag/imgFlagESPBackground1.svg';
+const imgFlagESPTop = '/assets/icons/figma/Flag/imgFlagESPTop.svg';
+const imgFlagESPTop1 = '/assets/icons/figma/Flag/imgFlagESPTop1.svg';
+const imgFlagESPPillars = '/assets/icons/figma/Flag/imgFlagESPPillars.svg';
+const imgFlagESPCrown = '/assets/icons/figma/Flag/imgFlagESPCrown.svg';
+const imgFlagESPShield = '/assets/icons/figma/Flag/imgFlagESPShield.svg';
+const imgFlagENGVector = '/assets/icons/figma/Flag/imgFlagENGVector.svg';
+const imgFlagENGVector1 = '/assets/icons/figma/Flag/imgFlagENGVector1.svg';
+const imgFlagENGGroup = '/assets/icons/figma/Flag/imgFlagENGGroup.svg';
+const imgFlagENGGroup1 = '/assets/icons/figma/Flag/imgFlagENGGroup1.svg';
 
 export type Language = 'ITA' | 'ENG' | 'FRA' | 'DEU' | 'ESP';
 
