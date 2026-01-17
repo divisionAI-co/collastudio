@@ -3,8 +3,8 @@
 import React from 'react';
 import styles from './Invoice.module.css';
 
-// Figma asset URL
-const imgLivello2 = 'https://www.figma.com/api/mcp/asset/63a5a19c-5b01-4473-a8b3-6264b446291f';
+// Local asset path
+const imgLivello2 = '/assets/BackgroundGraphics/figma/Invoice/imgLivello2.svg';
 
 export interface InvoiceProps {
   className?: string;

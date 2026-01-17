@@ -3,21 +3,21 @@
 import React from 'react';
 import styles from './Illustration.module.css';
 
-// Figma asset URLs
-const imgLivello2 = 'https://www.figma.com/api/mcp/asset/509ac9d5-7732-49ec-a6fb-c32725c39f32';
-const imgLivello3 = 'https://www.figma.com/api/mcp/asset/77d441b5-4340-4a33-af28-87cc4ac135f1';
-const imgLivello4 = 'https://www.figma.com/api/mcp/asset/cd22ba70-ef56-4b84-8f66-b1a1c267d363';
-const imgLivello5 = 'https://www.figma.com/api/mcp/asset/61151145-8950-48c0-8124-bf4598acce02';
-const imgLivello6 = 'https://www.figma.com/api/mcp/asset/912031e5-3144-4d37-a29d-847418a1f3b9';
-const imgLivello7 = 'https://www.figma.com/api/mcp/asset/c49180f9-ba59-4bd0-a95f-4e57ab156636';
-const imgLivello8 = 'https://www.figma.com/api/mcp/asset/837ee630-742c-4fc2-8372-40629648841a';
-const imgLivello9 = 'https://www.figma.com/api/mcp/asset/8be71fc5-166d-49d7-94f4-527e70c2ccc9';
-const imgLivello10 = 'https://www.figma.com/api/mcp/asset/9487bb66-575e-4feb-be37-4e6823864050';
-const imgLivello11 = 'https://www.figma.com/api/mcp/asset/948a1754-24c9-4ccf-bc29-2c8d06d6db88';
-const imgLivello12 = 'https://www.figma.com/api/mcp/asset/f9cfaae0-9a87-45a9-9ffb-96b665a634ce';
-const imgLivello13 = 'https://www.figma.com/api/mcp/asset/17b2a356-74bc-4acd-b316-e65b0dcfb518';
-const imgLivello14 = 'https://www.figma.com/api/mcp/asset/590a3e48-95c3-4305-859a-2b201487be0a';
-const imgVector = 'https://www.figma.com/api/mcp/asset/ac9b3ac3-bd33-40ed-aacc-851480591f00';
+// Local asset paths
+const imgLivello2 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello2.svg';
+const imgLivello3 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello3.svg';
+const imgLivello4 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello4.svg';
+const imgLivello5 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello5.svg';
+const imgLivello6 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello6.svg';
+const imgLivello7 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello7.svg';
+const imgLivello8 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello8.svg';
+const imgLivello9 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello9.svg';
+const imgLivello10 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello10.svg';
+const imgLivello11 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello11.svg';
+const imgLivello12 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello12.svg';
+const imgLivello13 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello13.svg';
+const imgLivello14 = '/assets/BackgroundGraphics/figma/Illustration/imgLivello14.svg';
+const imgVector = '/assets/BackgroundGraphics/figma/Illustration/imgVector.svg';
 
 export type IllustrationVariant = 'Freedom' | 'Itineraries' | '24H';
 

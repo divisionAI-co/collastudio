@@ -1,0 +1,23 @@
+{
+  "outputPath": "../public/assets/BackgroundGraphics/figma",
+  "assets": [
+    {
+      "imgProperty1Big": "https://www.figma.com/api/mcp/asset/6ea4332b-5b58-4b20-b5c4-728f8d6a8796"
+    },
+    {
+      "imgVector": "https://www.figma.com/api/mcp/asset/d1a277e8-f8a6-419b-9ae6-c4731e090321"
+    },
+    {
+      "imgVector1": "https://www.figma.com/api/mcp/asset/4a57e614-2153-4fb8-b1ca-5478b65d9109"
+    },
+    {
+      "imgVector2": "https://www.figma.com/api/mcp/asset/4360ac82-42b9-42b6-9a48-aab8fa742939"
+    },
+    {
+      "imgVector3": "https://www.figma.com/api/mcp/asset/aa4da8cc-ae3f-4d2d-87f0-2b4e7757ae30"
+    },
+    {
+      "imgVector4": "https://www.figma.com/api/mcp/asset/fbd78b89-1d09-436a-92d9-1cd10bf9fe0e"
+    }
+  ]
+}

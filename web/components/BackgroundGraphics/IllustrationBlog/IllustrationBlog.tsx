@@ -3,13 +3,13 @@
 import React from 'react';
 import styles from './IllustrationBlog.module.css';
 
-// Figma asset URLs
-const imgProperty1Big = 'https://www.figma.com/api/mcp/asset/6ea4332b-5b58-4b20-b5c4-728f8d6a8796';
-const imgVector = 'https://www.figma.com/api/mcp/asset/d1a277e8-f8a6-419b-9ae6-c4731e090321';
-const imgVector1 = 'https://www.figma.com/api/mcp/asset/4a57e614-2153-4fb8-b1ca-5478b65d9109';
-const imgVector2 = 'https://www.figma.com/api/mcp/asset/4360ac82-42b9-42b6-9a48-aab8fa742939';
-const imgVector3 = 'https://www.figma.com/api/mcp/asset/aa4da8cc-ae3f-4d2d-87f0-2b4e7757ae30';
-const imgVector4 = 'https://www.figma.com/api/mcp/asset/fbd78b89-1d09-436a-92d9-1cd10bf9fe0e';
+// Local asset paths
+const imgProperty1Big = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgProperty1Big.svg';
+const imgVector = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgVector.svg';
+const imgVector1 = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgVector1.svg';
+const imgVector2 = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgVector2.svg';
+const imgVector3 = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgVector3.svg';
+const imgVector4 = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgVector4.svg';
 
 export interface IllustrationBlogProps {
   className?: string;

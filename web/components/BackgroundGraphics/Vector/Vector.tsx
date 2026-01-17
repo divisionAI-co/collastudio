@@ -3,8 +3,8 @@
 import React from 'react';
 import styles from './Vector.module.css';
 
-// Figma asset URL
-const imgVector = 'https://www.figma.com/api/mcp/asset/2ee629ad-2b7c-473c-8118-ccb11a538fed';
+// Local asset path
+const imgVector = '/assets/BackgroundGraphics/figma/Vector/imgVector.svg';
 
 export interface VectorProps {
   className?: string;

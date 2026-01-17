@@ -3,8 +3,8 @@
 import React from 'react';
 import styles from './ModalitaIsolamento.module.css';
 
-// Figma asset URL
-const imgModalitaIsolamento = 'https://www.figma.com/api/mcp/asset/5a85fa09-4de0-4b0f-a822-a817adc6f0bf';
+// Local asset path
+const imgModalitaIsolamento = '/assets/BackgroundGraphics/figma/ModalitaIsolamento/imgModalitaIsolamento.svg';
 
 export interface ModalitaIsolamentoProps {
   className?: string;

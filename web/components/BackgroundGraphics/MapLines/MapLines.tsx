@@ -3,13 +3,13 @@
 import React from 'react';
 import styles from './MapLines.module.css';
 
-// Figma asset URLs
-const imgWhite1 = 'https://www.figma.com/api/mcp/asset/bebda457-b83a-439c-b0a8-9b78d024b827';
-const imgBlack1 = 'https://www.figma.com/api/mcp/asset/ff6688ca-f740-462b-bd07-7758298f8055';
-const imgWhite2 = 'https://www.figma.com/api/mcp/asset/3caf7505-c7c2-4edb-ba40-4d5afe378002';
-const imgBlack2 = 'https://www.figma.com/api/mcp/asset/1eac4eb9-01b4-407f-942f-eac9cefdece8';
-const imgWhite3 = 'https://www.figma.com/api/mcp/asset/90563948-9ba1-4b63-a989-16b15abd5d6d';
-const imgBlack3 = 'https://www.figma.com/api/mcp/asset/60369f5e-c309-4490-9192-1976b6a381e9';
+// Local asset paths
+const imgWhite1 = '/assets/BackgroundGraphics/figma/MapLines/imgWhite1.svg';
+const imgBlack1 = '/assets/BackgroundGraphics/figma/MapLines/imgBlack1.svg';
+const imgWhite2 = '/assets/BackgroundGraphics/figma/MapLines/imgWhite2.svg';
+const imgBlack2 = '/assets/BackgroundGraphics/figma/MapLines/imgBlack2.svg';
+const imgWhite3 = '/assets/BackgroundGraphics/figma/MapLines/imgWhite3.svg';
+const imgBlack3 = '/assets/BackgroundGraphics/figma/MapLines/imgBlack3.svg';
 
 export type MapLinesColor = 'White' | 'Black';
 export type MapLinesType = '1' | '2' | '3';
