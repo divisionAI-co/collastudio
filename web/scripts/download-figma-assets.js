@@ -3,54 +3,19 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Get map file path from command line arguments
-const mapFilePath = process.argv[2];
+// Get folder/file name from command line arguments
+const input = process.argv[2];
 
-if (!mapFilePath) {
-  console.error('Usage: node download-figma-assets.js <map-file-path>');
+if (!input) {
+  console.error('Usage: node download-figma-assets.js <folder-name>|<file-path>');
+  console.error('Example: node download-figma-assets.js BackgroundGraphics');
   console.error('Example: node download-figma-assets.js icon-map.json');
   process.exit(1);
 }
 
-// Load map file
-const mapFileFullPath = path.join(__dirname, mapFilePath);
-if (!fs.existsSync(mapFileFullPath)) {
-  console.error(`Map file not found: ${mapFileFullPath}`);
-  process.exit(1);
-}
-
-const assetMap = JSON.parse(fs.readFileSync(mapFileFullPath, 'utf8'));
-
-// Get output path from map file
-const outputPath = assetMap.outputPath;
-if (!outputPath) {
-  console.error('Map file must contain an "outputPath" field');
-  process.exit(1);
-}
-
-// Get groups (all keys except outputPath)
-// If the map has an "assets" key, it's a component-based format (filename = component name)
-const groups = {};
-if (assetMap.assets && Array.isArray(assetMap.assets)) {
-  // Component-based format: use filename (without .json) as component name
-  const componentName = path.basename(mapFilePath, '.json');
-  groups[componentName] = assetMap.assets;
-} else {
-  // Multi-group format: use all keys except outputPath as group names
-  for (const [key, value] of Object.entries(assetMap)) {
-    if (key !== 'outputPath') {
-      groups[key] = value;
-    }
-  }
-}
-
-// Output directory (relative to script directory)
-const outputBaseDir = path.join(__dirname, outputPath);
-
-// Create base directory if it doesn't exist
-if (!fs.existsSync(outputBaseDir)) {
-  fs.mkdirSync(outputBaseDir, { recursive: true });
-}
+// Determine if input is a folder or file
+const inputPath = path.join(__dirname, input);
+const isDirectory = fs.existsSync(inputPath) && fs.statSync(inputPath).isDirectory();
 
 // Map content types to file extensions
 const contentTypeToExt = {
@@ -132,25 +97,48 @@ function downloadImage(url, filepath) {
   });
 }
 
-async function downloadAllAssets() {
-  const assetType = path.basename(mapFilePath, '.json').replace('-map', '');
-  console.log(`Starting ${assetType} download process...\n`);
-  
+async function processComponentFile(mapFilePath, outputBaseDir) {
+  const assetMap = JSON.parse(fs.readFileSync(mapFilePath, 'utf8'));
+
+  // Get output path from map file
+  const outputPath = assetMap.outputPath;
+  if (!outputPath) {
+    throw new Error(`Map file must contain an "outputPath" field: ${mapFilePath}`);
+  }
+
+  // Get groups (all keys except outputPath)
+  const groups = {};
+  if (assetMap.assets && Array.isArray(assetMap.assets)) {
+    // Component-based format: use filename (without .json) as component name
+    const componentName = path.basename(mapFilePath, '.json');
+    groups[componentName] = assetMap.assets;
+  } else {
+    // Multi-group format: use all keys except outputPath as group names
+    for (const [key, value] of Object.entries(assetMap)) {
+      if (key !== 'outputPath') {
+        groups[key] = value;
+      }
+    }
+  }
+
+  // Use outputPath from map file, or fallback to provided outputBaseDir
+  const finalOutputDir = outputPath.startsWith('../') 
+    ? path.join(__dirname, outputPath)
+    : outputBaseDir || path.join(__dirname, outputPath);
+
+  // Create base directory if it doesn't exist
+  if (!fs.existsSync(finalOutputDir)) {
+    fs.mkdirSync(finalOutputDir, { recursive: true });
+  }
+
   let totalAssets = 0;
   let downloadedAssets = 0;
   let failedAssets = 0;
 
-  // Count total assets
+  // Process each group
   for (const [groupName, assetList] of Object.entries(groups)) {
-    totalAssets += assetList.length;
-  }
-
-  console.log(`Found ${totalAssets} assets across ${Object.keys(groups).length} groups\n`);
-
-  // Download assets for each group
-  for (const [groupName, assetList] of Object.entries(groups)) {
-    console.log(`\n📁 Processing group: ${groupName}`);
-    const groupDir = path.join(outputBaseDir, groupName);
+    console.log(`\n📁 Processing component: ${groupName}`);
+    const groupDir = path.join(finalOutputDir, groupName);
     
     if (!fs.existsSync(groupDir)) {
       fs.mkdirSync(groupDir, { recursive: true });
@@ -169,12 +157,64 @@ async function downloadAllAssets() {
         try {
           const result = await downloadImage(assetUrl, assetFilepath);
           downloadedAssets++;
+          totalAssets++;
           console.log(`  ✓ Downloaded: ${assetName}${path.extname(result.filepath)}`);
         } catch (error) {
           failedAssets++;
+          totalAssets++;
           console.error(`  ✗ Failed: ${assetName} - ${error.message}`);
         }
       }
+    }
+  }
+
+  return { totalAssets, downloadedAssets, failedAssets };
+}
+
+async function downloadAllAssets() {
+  let jsonFiles = [];
+
+  if (isDirectory) {
+    // Folder mode: find all JSON files in the folder
+    console.log(`📂 Scanning folder: ${input}\n`);
+    const folderPath = inputPath;
+    const files = fs.readdirSync(folderPath);
+    jsonFiles = files
+      .filter(file => file.endsWith('.json'))
+      .map(file => path.join(folderPath, file));
+    
+    if (jsonFiles.length === 0) {
+      console.error(`No JSON files found in folder: ${folderPath}`);
+      process.exit(1);
+    }
+    
+    console.log(`Found ${jsonFiles.length} JSON file(s) to process\n`);
+  } else {
+    // Single file mode (backward compatibility)
+    if (!fs.existsSync(inputPath)) {
+      console.error(`File or folder not found: ${inputPath}`);
+      process.exit(1);
+    }
+    jsonFiles = [inputPath];
+  }
+
+  let totalAssets = 0;
+  let downloadedAssets = 0;
+  let failedAssets = 0;
+
+  // Process each JSON file
+  for (const jsonFile of jsonFiles) {
+    const fileName = path.basename(jsonFile);
+    console.log(`\n📄 Processing: ${fileName}`);
+    
+    try {
+      const result = await processComponentFile(jsonFile);
+      totalAssets += result.totalAssets;
+      downloadedAssets += result.downloadedAssets;
+      failedAssets += result.failedAssets;
+    } catch (error) {
+      console.error(`  ✗ Error processing ${fileName}: ${error.message}`);
+      failedAssets++;
     }
   }
 
@@ -183,7 +223,6 @@ async function downloadAllAssets() {
   console.log(`   Downloaded: ${downloadedAssets}`);
   console.log(`   Failed: ${failedAssets}`);
   console.log(`\n✓ Download process complete!`);
-  console.log(`\nAssets saved to: ${outputBaseDir}`);
 }
 
 // Run the download
