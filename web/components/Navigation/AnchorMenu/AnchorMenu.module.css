@@ -1,0 +1,81 @@
+.anchorMenu {
+  background-color: #f7fdfb;
+  display: flex;
+  gap: var(--viewport-gutter, 0px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px) var(--viewport-margins, 100px);
+  width: 100%;
+}
+
+.menuContainer {
+  display: flex;
+  flex: 1 0 0;
+  gap: 30px;
+  align-items: center;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.menuItem {
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  border-radius: 5px;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.menuItemInactive {
+  backdrop-filter: blur(12px);
+  background: transparent;
+}
+
+.menuItemActive {
+  backdrop-filter: blur(12px);
+  border: 1px solid #2b2a26;
+  background: transparent;
+}
+
+.label {
+  color: #2b2a26;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+}
+
+.iconImage {
+  width: 8.138px;
+  height: 8.125px;
+  display: block;
+  max-width: none;
+  /* Convert white icon to dark color (#2b2a26) */
+  /* brightness(0) makes white -> black, then we can adjust */
+  filter: brightness(0);
+  opacity: 1;
+}

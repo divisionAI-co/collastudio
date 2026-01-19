@@ -1,0 +1,373 @@
+---
+name: Figma Asset Workflow
+description: Standardized workflow for handling Figma image assets in future components
+---
+
+# Figma Asset Workflow for Future Components
+
+## Overview
+
+This workflow applies to **future components only** (not existing: Button, Icon, Logo, BackgroundGraphics). When creating new components that use Figma image URLs, follow this standardized process.
+
+**Reference Examples:**
+- Mapper files: `web/scripts/BackgroundGraphics/Illustration.json`, `web/scripts/BackgroundGraphics/MapLines.json`
+- Component files: `web/components/BackgroundGraphics/Illustration/Illustration.tsx`, `web/components/BackgroundGraphics/MapLines/MapLines.tsx`
+- Download script: `web/scripts/download-figma-assets.js`
+
+## Workflow Steps
+
+### 1. Component Generation Phase
+
+When generating a new component that contains Figma image URLs:
+
+- Create the component files as usual (`ComponentName.tsx`, `ComponentName.module.css`, `index.ts`)
+- **Initially use Figma URLs directly** in the component code (e.g., `https://www.figma.com/api/mcp/asset/...`)
+- Extract all Figma URLs from the component and identify all image assets
+
+**Example (Initial State):**
+```typescript
+// web/components/NewComponent/NewComponent.tsx
+const imgAsset1 = 'https://www.figma.com/api/mcp/asset/abc123...';
+const imgAsset2 = 'https://www.figma.com/api/mcp/asset/def456...';
+```
+
+### 2. Mapper JSON Generation
+
+#### Component Structure Decision
+
+- **Single component** (no subsections): Create one JSON file
+- **Component with subsections**: Create separate JSON files for each subsection
+
+**Decision Rule:** If a component has multiple distinct sub-components (like Buttons → CTA, MenuVoice, LanguageButton), create separate JSON files. If it's a single component with variants (like Illustration → Freedom, 24H, Itineraries), use one JSON file.
+
+#### JSON File Structure
+
+Create mapper files in `web/scripts/<ComponentName>/` following this exact format:
+
+```json
+{
+  "outputPath": "../public/assets/<ComponentName>/figma",
+  "assets": [
+    {
+      "imgAssetName1": "https://www.figma.com/api/mcp/asset/..."
+    },
+    {
+      "imgAssetName2": "https://www.figma.com/api/mcp/asset/..."
+    }
+  ]
+}
+```
+
+**Key Requirements:**
+- `outputPath` is **required** - must be relative path starting with `../public/assets/`
+- `assets` is an **array** of objects
+- Each object contains **exactly one** key-value pair (variable name → Figma URL)
+- Variable names should match what's used in the component code (e.g., `imgAsset1`, `imgVector`, `imgWhite1`)
+
+**Real Example:** See `web/scripts/BackgroundGraphics/Illustration.json`:
+```json
+{
+  "outputPath": "../public/assets/BackgroundGraphics/figma",
+  "assets": [
+    {
+      "imgLivello2": "https://www.figma.com/api/mcp/asset/509ac9d5-7732-49ec-a6fb-c32725c39f32"
+    },
+    {
+      "imgLivello3": "https://www.figma.com/api/mcp/asset/77d441b5-4340-4a33-af28-87cc4ac135f1"
+    }
+  ]
+}
+```
+
+#### Naming Convention
+
+- **Single component**: `web/scripts/<ComponentName>/<ComponentName>.json`
+  - Example: `web/scripts/Vector/Vector.json`
+- **With subsections**: `web/scripts/<ComponentName>/<SubsectionName>.json`
+  - Example: `web/scripts/Buttons/CTA.json`, `web/scripts/Buttons/MenuVoice.json`
+
+**Important:** The JSON filename (without `.json`) becomes the folder name where assets are saved. For `Illustration.json`, assets go to `Illustration/` folder.
+
+#### Example Structure
+
+**Single Component:**
+```
+web/scripts/Vector/
+  └── Vector.json
+```
+
+**Component with Subsections (Buttons example):**
+```
+web/scripts/Buttons/
+  ├── CTA.json
+  ├── MenuVoice.json
+  └── LanguageButton.json
+```
+
+Each JSON file contains only the assets for that specific subsection.
+
+### 3. Asset Download Phase
+
+User runs the download command:
+```bash
+node download-figma-assets.js <ComponentName>
+```
+
+**Examples:**
+```bash
+node download-figma-assets.js BackgroundGraphics
+node download-figma-assets.js Buttons
+```
+
+**Script Behavior** (from `web/scripts/download-figma-assets.js`):
+
+1. **Scans folder**: Looks for all `.json` files in `web/scripts/<ComponentName>/`
+2. **Reads each JSON**: Extracts `outputPath` and `assets` array
+3. **Processes assets**: For each asset:
+   - Downloads from Figma URL
+   - Detects file type from response headers (`.svg`, `.png`, `.jpg`, etc.)
+   - Skips `data:` URIs automatically
+   - Saves to: `<outputPath>/<JSONFilename>/<assetName>.<ext>`
+4. **Creates directories**: Automatically creates all necessary folders
+5. **Reports progress**: Shows download status for each asset
+
+**Output Structure:**
+For `web/scripts/BackgroundGraphics/Illustration.json` with `outputPath: "../public/assets/BackgroundGraphics/figma"`:
+- Assets saved to: `web/public/assets/BackgroundGraphics/figma/Illustration/imgLivello2.svg`
+- Folder structure matches JSON filename
+
+### 4. URL Replacement Phase
+
+After assets are downloaded, replace Figma URLs in component files with local paths.
+
+**Before (Figma URLs):**
+```typescript
+const imgAsset1 = 'https://www.figma.com/api/mcp/asset/abc123...';
+const imgAsset2 = 'https://www.figma.com/api/mcp/asset/def456...';
+```
+
+**After (Local Paths):**
+```typescript
+const imgAsset1 = '/assets/<ComponentName>/figma/<SubsectionName>/imgAsset1.svg';
+const imgAsset2 = '/assets/<ComponentName>/figma/<SubsectionName>/imgAsset2.svg';
+```
+
+**Path Structure Rules:**
+
+- **Single component**: `/assets/<ComponentName>/figma/<ComponentName>/imgAssetName.<ext>`
+  - Example: `/assets/Vector/figma/Vector/imgVector.svg`
+- **With subsections**: `/assets/<ComponentName>/figma/<SubsectionName>/imgAssetName.<ext>`
+  - Example: `/assets/Buttons/figma/CTA/imgButtonMain.svg`
+
+**Real Example:** See `web/components/BackgroundGraphics/IllustrationBlog/IllustrationBlog.tsx`:
+```typescript
+const imgProperty1Big = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgProperty1Big.svg';
+const imgVector = '/assets/BackgroundGraphics/figma/IllustrationBlog/imgVector.svg';
+```
+
+**Important Notes:**
+- Paths start with `/assets/` (Next.js public folder)
+- File extensions match downloaded files (`.svg`, `.png`, `.jpg`)
+- Variable names in component must match asset names in JSON
+
+### 5. File Organization
+
+#### Mapper Files Location
+```
+web/scripts/
+  └── <ComponentName>/
+      ├── <Subsection1>.json
+      ├── <Subsection2>.json
+      └── ...
+```
+
+**Real Example:**
+```
+web/scripts/BackgroundGraphics/
+  ├── Illustration.json
+  ├── MapLines.json
+  ├── Vector.json
+  ├── ModalitaIsolamento.json
+  ├── IllustrationBlog.json
+  ├── Invoice.json
+  └── Livello.json
+```
+
+#### Downloaded Assets Location
+```
+web/public/assets/
+  └── <ComponentName>/
+      └── figma/
+          ├── <Subsection1>/
+          │   ├── imgAsset1.svg
+          │   └── imgAsset2.png
+          └── <Subsection2>/
+              └── imgAsset3.svg
+```
+
+**Real Example:**
+```
+web/public/assets/BackgroundGraphics/figma/
+  ├── Illustration/
+  │   ├── imgLivello2.svg
+  │   ├── imgLivello3.svg
+  │   └── ...
+  ├── MapLines/
+  │   ├── imgWhite1.svg
+  │   ├── imgBlack1.svg
+  │   └── ...
+  └── Vector/
+      └── imgVector.svg
+```
+
+## Complete Example: Buttons Component with Subsections
+
+### Step 1: Generate Components with Figma URLs
+
+Create component files:
+- `web/components/Button/CTA/CTA.tsx` - Contains Figma URLs for CTA button images
+- `web/components/Button/MenuVoice/MenuVoice.tsx` - Contains Figma URLs for menu voice images
+
+**Initial code (with Figma URLs):**
+```typescript
+// CTA.tsx
+const imgButtonMain = 'https://www.figma.com/api/mcp/asset/abc123...';
+const imgButtonIcon = 'https://www.figma.com/api/mcp/asset/def456...';
+```
+
+### Step 2: Create Mapper JSON Files
+
+Create `web/scripts/Buttons/CTA.json`:
+```json
+{
+  "outputPath": "../public/assets/Buttons/figma",
+  "assets": [
+    {
+      "imgButtonMain": "https://www.figma.com/api/mcp/asset/abc123..."
+    },
+    {
+      "imgButtonIcon": "https://www.figma.com/api/mcp/asset/def456..."
+    }
+  ]
+}
+```
+
+Create `web/scripts/Buttons/MenuVoice.json`:
+```json
+{
+  "outputPath": "../public/assets/Buttons/figma",
+  "assets": [
+    {
+      "imgMenuIcon": "https://www.figma.com/api/mcp/asset/ghi789..."
+    }
+  ]
+}
+```
+
+### Step 3: Download Assets
+
+User runs:
+```bash
+node download-figma-assets.js Buttons
+```
+
+Script output:
+```
+📂 Scanning folder: Buttons
+
+📄 Processing: CTA.json
+📁 Processing component: CTA
+  ✓ Downloaded: imgButtonMain.svg
+  ✓ Downloaded: imgButtonIcon.svg
+
+📄 Processing: MenuVoice.json
+📁 Processing component: MenuVoice
+  ✓ Downloaded: imgMenuIcon.svg
+
+📊 Summary:
+   Total assets: 3
+   Downloaded: 3
+   Failed: 0
+```
+
+Assets are saved to:
+- `web/public/assets/Buttons/figma/CTA/imgButtonMain.svg`
+- `web/public/assets/Buttons/figma/CTA/imgButtonIcon.svg`
+- `web/public/assets/Buttons/figma/MenuVoice/imgMenuIcon.svg`
+
+### Step 4: Replace URLs in Components
+
+Update `CTA.tsx`:
+```typescript
+// Before
+const imgButtonMain = 'https://www.figma.com/api/mcp/asset/abc123...';
+const imgButtonIcon = 'https://www.figma.com/api/mcp/asset/def456...';
+
+// After
+const imgButtonMain = '/assets/Buttons/figma/CTA/imgButtonMain.svg';
+const imgButtonIcon = '/assets/Buttons/figma/CTA/imgButtonIcon.svg';
+```
+
+Update `MenuVoice.tsx`:
+```typescript
+// Before
+const imgMenuIcon = 'https://www.figma.com/api/mcp/asset/ghi789...';
+
+// After
+const imgMenuIcon = '/assets/Buttons/figma/MenuVoice/imgMenuIcon.svg';
+```
+
+## Key Rules Summary
+
+1. **Mapper files must include `outputPath`** - Required field, relative path starting with `../public/assets/`
+2. **Each asset object contains one key-value pair** - Variable name → Figma URL
+3. **Skip data URIs** - The download script automatically skips `data:` URIs
+4. **File extensions are auto-detected** - Script detects `.svg`, `.png`, `.jpg` from HTTP response headers
+5. **Component folder name matches mapper folder name** - `web/scripts/Buttons/` → component uses `/assets/Buttons/figma/...`
+6. **JSON filename determines asset folder** - `CTA.json` → assets go to `CTA/` folder
+7. **Variable names must match** - Asset name in JSON must match variable name in component
+
+## Script Details
+
+**File:** `web/scripts/download-figma-assets.js`
+
+**Key Functions:**
+- `processComponentFile()` - Processes a single JSON mapper file
+- `downloadImage()` - Downloads individual assets with redirect handling
+- `getFileExtension()` - Detects file type from content-type header or URL
+
+**Supported File Types:**
+- `.svg` (image/svg+xml)
+- `.png` (image/png)
+- `.jpg` / `.jpeg` (image/jpeg)
+- `.gif` (image/gif)
+- `.webp` (image/webp)
+
+**Error Handling:**
+- Handles HTTP redirects (301, 302)
+- Skips data URIs automatically
+- Reports failed downloads with error messages
+- Creates directories recursively
+
+## Troubleshooting
+
+**Issue:** Assets not found after download
+- **Check:** Ensure `outputPath` in JSON is correct relative path
+- **Check:** Verify assets were downloaded to `web/public/assets/` (Next.js serves from `public/`)
+
+**Issue:** Wrong file extensions
+- **Check:** Script auto-detects from response headers, but you can verify in network tab
+- **Fix:** Manually rename if needed, but script should handle this automatically
+
+**Issue:** Component can't find assets
+- **Check:** Path in component matches actual file location
+- **Check:** Variable names match asset names in JSON
+- **Check:** File extensions match downloaded files
+
+## Notes
+
+- The `download-figma-assets.js` script already supports this workflow
+- It processes all `.json` files in the specified folder automatically
+- Each JSON file's `outputPath` determines where assets are saved
+- The script creates component/subsection folders automatically based on JSON filename
+- This workflow is for **future components only** - existing components (Button, Icon, Logo, BackgroundGraphics) are already complete

@@ -1,0 +1,40 @@
+.breadcrumb {
+  backdrop-filter: blur(16.5px);
+  background-color: #f4f097;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-l, 40px) var(--viewport-margins, 100px);
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.link,
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: var(--text-small-body, 12px);
+  line-height: normal;
+  color: #2b2a26;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: var(--text-tiny, 10px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #2b2a26;
+}
