@@ -1,0 +1,32 @@
+{
+  "outputPath": "../public/assets/Navigation/figma",
+  "assets": [
+    {
+      "imgUserIconLoggedIn": "https://www.figma.com/api/mcp/asset/761038d5-99c9-471b-a903-765949e12b72"
+    },
+    {
+      "imgUserIconLoggedOut": "https://www.figma.com/api/mcp/asset/39bd96b0-a06a-4e11-82dd-62dc4cb4e2b2"
+    },
+    {
+      "imgUserIconLoggedOutWhite": "https://www.figma.com/api/mcp/asset/4420c95a-f9c0-4f8b-bc93-d45873cd7e55"
+    },
+    {
+      "imgBackpackIcon": "https://www.figma.com/api/mcp/asset/761038d5-99c9-471b-a903-765949e12b72"
+    },
+    {
+      "imgHeartIcon": "https://www.figma.com/api/mcp/asset/a6027fc6-21f4-4a60-bb04-15939a2cadc9"
+    },
+    {
+      "imgLogoutIcon": "https://www.figma.com/api/mcp/asset/8d0ac253-13cb-44d3-a979-b774e7e5d677"
+    },
+    {
+      "imgUserIconDark": "https://www.figma.com/api/mcp/asset/a1d8bd1a-cb21-4654-8134-8bb176e89876"
+    },
+    {
+      "imgUserIconTablet": "https://www.figma.com/api/mcp/asset/7a84115a-3f32-4be5-919e-e7781ffb2f5f"
+    },
+    {
+      "imgUserIconMobile": "https://www.figma.com/api/mcp/asset/86649c0e-454a-4a92-9ed5-b229f137ebb1"
+    }
+  ]
+}

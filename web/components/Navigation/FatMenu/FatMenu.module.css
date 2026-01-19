@@ -1,0 +1,624 @@
+.fatMenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f7fdfb;
+}
+
+/* Main menu bar */
+.mainMenuBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--vertical-spacing-spacing-s, 10px) var(--viewport-gutter, 30px);
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.brandContainer {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.brand {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.brandOver {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.brandOff {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.brandScrollContainer {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 179px;
+}
+
+.brandScroll {
+  aspect-ratio: 166 / 125;
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.mainMenuBar .container {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.menuVoicesContainer {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--viewport-gutter, 30px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 var(--viewport-gutter, 30px);
+}
+
+.menuVoicesContainerScroll {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--viewport-gutter, 30px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 var(--viewport-gutter, 30px);
+}
+
+.menuVoice {
+  backdrop-filter: blur(12px);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  border-radius: 5px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuVoiceActive {
+  backdrop-filter: blur(12px);
+  border: 1px solid #2b2a26;
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  border-radius: 5px;
+  flex-shrink: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.menuVoiceText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #2b2a26;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.menuVoiceTextActive {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #2b2a26;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.menuVoiceTextOff {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.actionsContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.actionsContainerScroll {
+  display: flex;
+  gap: var(--viewport-gutter, 30px);
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  flex-shrink: 0;
+  width: 214px;
+}
+
+.chatButton {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.chatButtonOff {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.chatButtonScroll {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.chatButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.chatButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.chatButtonIconImg {
+  width: 11.375px;
+  height: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.chatButtonText {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.chatButtonTextScroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.chatButtonTextP {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.chatButtonTextPOff {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.chatButtonTextPScroll {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.chatButtonTextIcon {
+  height: 0;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.chatButtonTextIconImg {
+  position: absolute;
+  inset: -1px 0 0 0;
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.privateAreaButtonScroll {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.privateAreaButtonCTAOff {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.privateAreaButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* Content area */
+.contentArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  padding: var(--viewport-margins, 100px) var(--vertical-spacing-spacing-l, 40px);
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--vertical-spacing-spacing-m, 40px) var(--vertical-spacing-spacing-s, 15px);
+  align-items: flex-start;
+  min-width: 342px;
+  padding: var(--vertical-spacing-spacing-m, 15px) 0;
+  flex-shrink: 0;
+}
+
+.filterColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--vertical-spacing-spacing-m, 15px);
+  align-items: flex-start;
+  min-width: 164px;
+  padding: 0 var(--vertical-spacing-spacing-s, 10px);
+  flex-shrink: 0;
+}
+
+.filterColumnTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #8ebfc4;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--vertical-spacing-spacing-s, 0px);
+  align-items: flex-start;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.filterItemContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
+  color: #2b2a26;
+}
+
+.filterItemText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  flex-shrink: 0;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.filterItemCount {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.menuBanner {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  height: 301px;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 56px 70px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.menuBannerImg {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.menuBannerText {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  line-height: 1.2;
+  font-style: normal;
+  flex-shrink: 0;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* View all trails */
+.viewAllContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--viewport-margins, 100px) var(--vertical-spacing-spacing-l, 40px);
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.viewAllButton {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.viewAllButtonText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.viewAllButtonTextP {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.viewAllButtonIcon {
+  height: 0;
+  flex-shrink: 0;
+  width: 8px;
+  position: relative;
+}
+
+.viewAllButtonIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.viewAllButtonChevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.viewAllButtonChevronInner {
+  position: absolute;
+  inset: 0;
+}
+
+.viewAllButtonChevronImg {
+  height: 10.925px;
+  width: 5.881px;
+  display: block;
+  max-width: none;
+}
+
+/* State variants */
+.stateOn {
+  height: 671px;
+}
+
+.stateOver {
+  height: 78px;
+}
+
+.stateOver .contentArea,
+.stateOver .viewAllContainer {
+  display: none;
+}
+
+.stateOff {
+  height: 78px;
+}
+
+.stateOff .contentArea,
+.stateOff .viewAllContainer {
+  display: none;
+}
+
+.stateScroll {
+  height: 67px;
+}
+
+.stateScroll .contentArea,
+.stateScroll .viewAllContainer {
+  display: none;
+}
+
+.stateOnabout {
+  height: 551px;
+}

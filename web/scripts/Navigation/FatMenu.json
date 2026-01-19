@@ -1,0 +1,38 @@
+{
+  "outputPath": "../public/assets/Navigation/figma",
+  "assets": [
+    {
+      "imgMenuBanner": "https://www.figma.com/api/mcp/asset/cb84d70e-ce70-4c65-ae26-87d18584226a"
+    },
+    {
+      "imgChevronRight": "https://www.figma.com/api/mcp/asset/365c55b4-cb6c-44ea-81a6-b8847ed3fba9"
+    },
+    {
+      "imgViewAllTrails": "https://www.figma.com/api/mcp/asset/c878215a-ba9b-4549-a622-8dc4f5c3f205"
+    },
+    {
+      "imgWhatsappIcon": "https://www.figma.com/api/mcp/asset/c0c1172b-f04a-4c8f-8675-a58073ca0b4e"
+    },
+    {
+      "imgUserIcon": "https://www.figma.com/api/mcp/asset/9baa087b-5948-4bf3-be01-1f1c5d3ff49b"
+    },
+    {
+      "imgLogoDark": "https://www.figma.com/api/mcp/asset/521c96f1-4fa9-40a4-b99b-3aaf9d4b65d1"
+    },
+    {
+      "imgLogoDarkOver": "https://www.figma.com/api/mcp/asset/7642a592-3565-44ac-be85-abd4fb645701"
+    },
+    {
+      "imgWhatsappIconOff": "https://www.figma.com/api/mcp/asset/e5757627-0d2d-410e-ac9f-204ca74415f2"
+    },
+    {
+      "imgUserIconOff": "https://www.figma.com/api/mcp/asset/8eaa0c3c-cea7-4482-b614-a7dfb932e8e1"
+    },
+    {
+      "imgViewAllTrailsScroll": "https://www.figma.com/api/mcp/asset/0464748c-ff77-4bb2-8944-eeb3a1ee88d4"
+    },
+    {
+      "imgChevronRightScroll": "https://www.figma.com/api/mcp/asset/c390f619-aa7f-4abc-8dea-61d3f7f42e1b"
+    }
+  ]
+}

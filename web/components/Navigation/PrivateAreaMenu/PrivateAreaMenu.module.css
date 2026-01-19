@@ -1,0 +1,346 @@
+.privateAreaMenu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Desktop */
+.deviceDesktop {
+  height: 80px;
+  padding: 0 var(--viewport-margins, 100px);
+  gap: 0;
+}
+
+.deviceDesktop .brand {
+  height: 62px;
+  width: 192px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceDesktop .container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 131px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+
+.deviceDesktop .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: #f7fdfb;
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceDesktop .privateAreaButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceDesktop .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceDesktop .privateAreaButtonText {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop .privateAreaButtonTextP {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop .dropdownMenu {
+  background-color: #f7fdfb;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 131px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+}
+
+.deviceDesktop .dropdownMenuItem {
+  border-bottom: 1px solid rgba(38, 38, 34, 0.2);
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.deviceDesktop .dropdownMenuItem:last-child {
+  border-bottom: none;
+}
+
+.deviceDesktop .dropdownMenuItemIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceDesktop .dropdownMenuItemIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceDesktop .dropdownMenuItemIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.deviceDesktop .dropdownMenuItemText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet */
+.deviceTablet {
+  height: 80px;
+  padding: 0 var(--viewport-margins, 100px);
+  gap: 0;
+  justify-content: space-between;
+}
+
+.deviceTablet .brand {
+  height: 62px;
+  width: 192px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceTablet .container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceTablet .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 131px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceTablet .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceTablet .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceTablet .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceTablet .privateAreaButtonText {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceTablet .privateAreaButtonTextPTablet {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile */
+.deviceMobile {
+  height: 70px;
+  padding: 0 var(--viewport-margins, 100px);
+  gap: 0;
+  justify-content: space-between;
+}
+
+.deviceMobile .brand {
+  height: 49.699px;
+  width: 66px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceMobile .container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceMobile .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  width: 131px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceMobile .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceMobile .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceMobile .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceMobile .privateAreaButtonText {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceMobile .privateAreaButtonTextPMobile {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Type variants */
+.typeDark .brand {
+  /* Logo color handled by Logo component */
+}
+
+.typeDark .privateAreaButtonCTA {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+}
+
+.typeDark .privateAreaButtonTextP {
+  color: #2b2a26;
+}

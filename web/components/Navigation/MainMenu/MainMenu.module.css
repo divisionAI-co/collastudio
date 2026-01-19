@@ -1,0 +1,1018 @@
+.mainMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--vertical-spacing-spacing-s, 10px) var(--viewport-gutter, 30px);
+  width: 100%;
+  background-color: transparent;
+}
+
+/* ===== DESKTOP DEFAULT ===== */
+.deviceDesktop.typeDefault {
+  height: 78px;
+}
+
+.deviceDesktop.typeDefault .brand {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceDesktop.typeDefault .container {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.deviceDesktop.typeDefault .menuVoicesContainer {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--viewport-gutter, 30px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 var(--viewport-gutter, 30px);
+}
+
+.deviceDesktop.typeDefault .menuVoice {
+  backdrop-filter: blur(12px);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDefault .menuVoiceText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop.typeDefault .actionsContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDefault .chatButton {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDefault .chatButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceDesktop.typeDefault .chatButtonIconImg {
+  width: 11.375px;
+  height: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceDesktop.typeDefault .chatButtonText {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDefault .chatButtonTextP {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop.typeDefault .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceDesktop.typeDefault .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDefault .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceDesktop.typeDefault .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== DESKTOP DARK ===== */
+.deviceDesktop.typeDark {
+  height: 78px;
+}
+
+.deviceDesktop.typeDark .brand {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceDesktop.typeDark .container {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+.deviceDesktop.typeDark .menuVoicesContainer {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--viewport-gutter, 30px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 var(--viewport-gutter, 30px);
+}
+
+.deviceDesktop.typeDark .menuVoice {
+  backdrop-filter: blur(12px);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDark .menuVoiceTextDark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #2b2a26;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop.typeDark .actionsContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDark .chatButtonDark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDark .chatButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceDesktop.typeDark .chatButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceDesktop.typeDark .chatButtonIconImg {
+  width: 11.375px;
+  height: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceDesktop.typeDark .chatButtonText {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDark .chatButtonTextPDark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop.typeDark .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceDesktop.typeDark .privateAreaButtonCTADark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDark .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceDesktop.typeDark .privateAreaButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceDesktop.typeDark .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== DESKTOP WHITE ON SCROLL ===== */
+.deviceDesktop.typeWhiteonscroll {
+  height: 67px;
+}
+
+.deviceDesktop.typeWhiteonscroll .brandScrollContainer {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 179px;
+}
+
+.deviceDesktop.typeWhiteonscroll .brandScroll {
+  aspect-ratio: 166 / 125;
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.deviceDesktop.typeWhiteonscroll .menuVoicesContainerScroll {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--viewport-gutter, 30px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 var(--viewport-gutter, 30px);
+}
+
+.deviceDesktop.typeWhiteonscroll .containerScroll {
+  display: flex;
+  gap: var(--viewport-gutter, 30px);
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  flex-shrink: 0;
+  width: 214px;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonScroll {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonIconImg {
+  width: 11.375px;
+  height: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonTextScroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonTextPScroll {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonTextIcon {
+  height: 0;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.deviceDesktop.typeWhiteonscroll .chatButtonTextIconImg {
+  position: absolute;
+  inset: -1px 0 0 0;
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.deviceDesktop.typeWhiteonscroll .privateAreaButtonScroll {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeWhiteonscroll .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeWhiteonscroll .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceDesktop.typeWhiteonscroll .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== DESKTOP DARK ON SCROLL ===== */
+.deviceDesktop.typeDarkonscroll {
+  height: 67px;
+}
+
+.deviceDesktop.typeDarkonscroll .brandScrollContainer {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 179px;
+}
+
+.deviceDesktop.typeDarkonscroll .brandScroll {
+  aspect-ratio: 166 / 125;
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.deviceDesktop.typeDarkonscroll .menuVoicesContainerScroll {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--viewport-gutter, 30px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 var(--viewport-gutter, 30px);
+}
+
+.deviceDesktop.typeDarkonscroll .containerScroll {
+  display: flex;
+  gap: var(--viewport-gutter, 30px);
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  flex-shrink: 0;
+  width: 214px;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonScroll {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonIconImg {
+  width: 11.375px;
+  height: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonTextScroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonTextPScrollDark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonTextIcon {
+  height: 0;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.deviceDesktop.typeDarkonscroll .chatButtonTextIconImg {
+  position: absolute;
+  inset: -1px 0 0 0;
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.deviceDesktop.typeDarkonscroll .privateAreaButtonScroll {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 47px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) 0;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .privateAreaButtonCTADark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceDesktop.typeDarkonscroll .privateAreaButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceDesktop.typeDarkonscroll .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== TABLET DEFAULT ===== */
+.deviceTablet.typeDefault {
+  height: 78px;
+}
+
+.deviceTablet.typeDefault .menuButton {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceTablet.typeDefault .menuButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceTablet.typeDefault .menuButtonIconImg {
+  height: 9.344px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceTablet.typeDefault .brand {
+  height: 58px;
+  width: 179px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceTablet.typeDefault .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceTablet.typeDefault .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceTablet.typeDefault .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceTablet.typeDefault .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== TABLET DARK ===== */
+.deviceTablet.typeDark {
+  height: 78px;
+}
+
+.deviceTablet.typeDark .menuButtonDark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceTablet.typeDark .menuButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceTablet.typeDark .menuButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceTablet.typeDark .menuButtonIconImg {
+  width: 8.138px;
+  height: 8.138px;
+  display: block;
+  max-width: none;
+}
+
+.deviceTablet.typeDark .brand {
+  height: 58px;
+  width: 180px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceTablet.typeDark .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceTablet.typeDark .privateAreaButtonCTADark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceTablet.typeDark .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceTablet.typeDark .privateAreaButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceTablet.typeDark .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== MOBILE DEFAULT ===== */
+.deviceMobile.typeDefault {
+  height: 69.69879150390625px;
+}
+
+.deviceMobile.typeDefault .menuButton {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceMobile.typeDefault .menuButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceMobile.typeDefault .menuButtonIconImg {
+  height: 9.344px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+.deviceMobile.typeDefault .brand {
+  height: 49.699px;
+  width: 66px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceMobile.typeDefault .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceMobile.typeDefault .privateAreaButtonCTA {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceMobile.typeDefault .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.deviceMobile.typeDefault .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}
+
+/* ===== MOBILE DARK ===== */
+.deviceMobile.typeDark {
+  height: 70.45181274414062px;
+}
+
+.deviceMobile.typeDark .menuButtonDark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceMobile.typeDark .menuButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceMobile.typeDark .menuButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceMobile.typeDark .menuButtonIconImg {
+  width: 8.138px;
+  height: 8.138px;
+  display: block;
+  max-width: none;
+}
+
+.deviceMobile.typeDark .brand {
+  height: 50.452px;
+  width: 67px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.deviceMobile.typeDark .privateAreaButton {
+  display: flex;
+  flex-direction: column;
+  height: 47px;
+  align-items: flex-end;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deviceMobile.typeDark .privateAreaButtonCTADark {
+  backdrop-filter: blur(16.5px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-m, 15px);
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.deviceMobile.typeDark .privateAreaButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  position: relative;
+}
+
+.deviceMobile.typeDark .privateAreaButtonIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.deviceMobile.typeDark .privateAreaButtonIconImg {
+  height: 13px;
+  width: 11.375px;
+  display: block;
+  max-width: none;
+}

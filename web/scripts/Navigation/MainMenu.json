@@ -1,0 +1,59 @@
+{
+  "outputPath": "../public/assets/Navigation/figma",
+  "assets": [
+    {
+      "imgWhatsappDefault": "https://www.figma.com/api/mcp/asset/c986923f-851a-42be-aa99-95bc5d9cfa31"
+    },
+    {
+      "imgUserDefault": "https://www.figma.com/api/mcp/asset/f5829f22-e432-4af4-af3f-d853169a2f99"
+    },
+    {
+      "imgWhatsappDark": "https://www.figma.com/api/mcp/asset/737cb39b-ac38-400f-a5ee-9d3d1447ae03"
+    },
+    {
+      "imgUserDark": "https://www.figma.com/api/mcp/asset/cfb5a723-799d-485e-b452-c773b956ba3d"
+    },
+    {
+      "imgWhatsappWhiteScroll": "https://www.figma.com/api/mcp/asset/14f592e9-9c7a-456d-a4f6-d741b9b2c754"
+    },
+    {
+      "imgUserWhiteScroll": "https://www.figma.com/api/mcp/asset/63b19067-19b5-4037-a7bf-fd348ad49aec"
+    },
+    {
+      "imgViewAllTrailsWhite": "https://www.figma.com/api/mcp/asset/ae3a2ac5-6875-4592-8b23-d67dea4ebdf8"
+    },
+    {
+      "imgWhatsappDarkScroll": "https://www.figma.com/api/mcp/asset/40efd253-26dd-4fa5-afc7-25e9ac7775d1"
+    },
+    {
+      "imgUserDarkScroll": "https://www.figma.com/api/mcp/asset/7d180c64-0a9e-435c-99a5-5fe3021576b0"
+    },
+    {
+      "imgViewAllTrailsDark": "https://www.figma.com/api/mcp/asset/0468d2b5-4997-43b3-beff-44c8c8dab502"
+    },
+    {
+      "imgMenuTabletDefault": "https://www.figma.com/api/mcp/asset/4321f991-60b4-45cf-b16b-e85ce588b4df"
+    },
+    {
+      "imgUserTabletDefault": "https://www.figma.com/api/mcp/asset/8cb7f073-3706-4223-ad4c-8ec1d79a6518"
+    },
+    {
+      "imgCloseTabletDark": "https://www.figma.com/api/mcp/asset/8509df79-30fd-4368-99ed-ab5c0272e58c"
+    },
+    {
+      "imgUserTabletDark": "https://www.figma.com/api/mcp/asset/405d48a4-daa7-4684-8334-1761fee9d1ac"
+    },
+    {
+      "imgMenuMobileDefault": "https://www.figma.com/api/mcp/asset/f71b0bd0-f1d5-4877-831b-e41d8607b2ba"
+    },
+    {
+      "imgUserMobileDefault": "https://www.figma.com/api/mcp/asset/a66eca28-1c19-4b77-a1b5-eca8888952cd"
+    },
+    {
+      "imgCloseMobileDark": "https://www.figma.com/api/mcp/asset/0fa1516d-c703-4f25-8594-3d163cdc41c4"
+    },
+    {
+      "imgUserMobileDark": "https://www.figma.com/api/mcp/asset/7db6d517-dfc5-46da-9bb1-eedd46789f30"
+    }
+  ]
+}
