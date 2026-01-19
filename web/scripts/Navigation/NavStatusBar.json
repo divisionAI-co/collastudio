@@ -1,0 +1,68 @@
+{
+  "outputPath": "../public/assets/Navigation/figma",
+  "assets": [
+    {
+      "imgFavicon": "https://www.figma.com/api/mcp/asset/018da403-f795-42ef-aec9-ace73664cf3e"
+    },
+    {
+      "imgImageUserProfile": "https://www.figma.com/api/mcp/asset/3bc96e27-2c49-4255-acff-002a70b4c0e2"
+    },
+    {
+      "imgCurveL": "https://www.figma.com/api/mcp/asset/dd7a8d32-11bb-4a1a-8a96-2de724821e5f"
+    },
+    {
+      "imgCloseIcon": "https://www.figma.com/api/mcp/asset/c5b5f953-3633-47ee-9cc5-d79dad0b7721"
+    },
+    {
+      "imgCurveR": "https://www.figma.com/api/mcp/asset/c8aee676-7524-41c1-ba71-309f4837f59d"
+    },
+    {
+      "imgPlusIcon": "https://www.figma.com/api/mcp/asset/52394d3f-9d78-40f2-acc7-e24826e513a1"
+    },
+    {
+      "imgBrowserControls": "https://www.figma.com/api/mcp/asset/a1676b1f-250e-4c72-a93c-a0fc91219952"
+    },
+    {
+      "imgMoreIcon": "https://www.figma.com/api/mcp/asset/e533d102-9a12-49f9-8ea6-c9dfc49b0059"
+    },
+    {
+      "imgIconFavorite": "https://www.figma.com/api/mcp/asset/b1d1e31a-8a6a-42f2-89fd-1d0ef7ca277f"
+    },
+    {
+      "imgIconSecure": "https://www.figma.com/api/mcp/asset/1dce5fb0-9626-41b9-8ae4-5af5d508884a"
+    },
+    {
+      "imgHomeIcon": "https://www.figma.com/api/mcp/asset/68ff63d8-6567-49dd-833d-40b0394e5960"
+    },
+    {
+      "imgRefreshIcon": "https://www.figma.com/api/mcp/asset/e7a69e68-bae8-4b8c-9be1-038ac8ee9ea7"
+    },
+    {
+      "imgForwardIcon": "https://www.figma.com/api/mcp/asset/42e7d070-6cb1-4abf-80e0-d22d56c629c4"
+    },
+    {
+      "imgBackIcon": "https://www.figma.com/api/mcp/asset/19d7b604-dcbe-4aba-afd7-faa5753d8ead"
+    },
+    {
+      "imgWindowGrabber": "https://www.figma.com/api/mcp/asset/eca99f7e-1285-4ffe-86f4-77567d26a490"
+    },
+    {
+      "imgFrame12": "https://www.figma.com/api/mcp/asset/50f3813b-b0d5-4060-bab8-be1a03d13ab8"
+    },
+    {
+      "imgFrame11": "https://www.figma.com/api/mcp/asset/c1ab4006-1f5e-4f1c-ab23-a47f542120db"
+    },
+    {
+      "imgFrame10": "https://www.figma.com/api/mcp/asset/dc0f85a8-c2a5-43ee-98bb-3809024b5ecc"
+    },
+    {
+      "imgFrame8": "https://www.figma.com/api/mcp/asset/23509868-18b2-413a-b105-30fe5c23749e"
+    },
+    {
+      "imgTime": "https://www.figma.com/api/mcp/asset/5ffc19a1-ea9e-48b2-8ae4-3c294b714882"
+    },
+    {
+      "imgStack": "https://www.figma.com/api/mcp/asset/c2f37bd3-1f29-4e18-af82-ef6d06cb9ef6"
+    }
+  ]
+}

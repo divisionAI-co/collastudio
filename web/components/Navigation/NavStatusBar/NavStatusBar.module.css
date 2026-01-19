@@ -1,0 +1,705 @@
+.navStatusBar {
+  position: relative;
+  width: 100%;
+}
+
+/* Desktop Viewport */
+.viewportdesktop {
+  height: 118px;
+  position: relative;
+}
+
+/* Toolbar - Browser Controls */
+.browserControlsBar {
+  position: absolute;
+  inset: 0 0 64.41% 0;
+}
+
+.browserControlsBarInner {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.browserControlsBarBg {
+  position: absolute;
+  inset: 0;
+  background-color: #dee1e6;
+  border-radius: 8px 8px 0 0;
+}
+
+.browserControls {
+  position: absolute;
+  height: 12px;
+  left: 13px;
+  top: calc(50% + 0.5px);
+  transform: translateY(-50%);
+  width: 52px;
+}
+
+.browserControlsImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabAndPlus {
+  position: absolute;
+  height: 34px;
+  left: 72px;
+  top: calc(50% + 4px);
+  transform: translateY(-50%);
+  width: 167px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.browserTab {
+  position: absolute;
+  height: 34px;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 131px;
+}
+
+.tabWrapper {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  left: -6px;
+  top: 0;
+}
+
+.tabCurveL {
+  height: 8px;
+  width: 6px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.tabCurveImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabContent {
+  background: white;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  overflow: hidden;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+  flex-shrink: 0;
+}
+
+.favicon {
+  position: relative;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.faviconImg {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabTextWrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #494c4f;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.tabText {
+  line-height: normal;
+}
+
+.tabTextDot {
+  line-height: normal;
+  color: white;
+}
+
+.closeIcon {
+  position: relative;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.closeIconContainer {
+  position: absolute;
+  inset: 29.17%;
+}
+
+.closeIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabCurveRWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.tabCurveRTransform {
+  flex: none;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.tabCurveR {
+  height: 8px;
+  width: 6px;
+  position: relative;
+}
+
+.plusIcon {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.plusIconContainer {
+  position: absolute;
+  inset: 16.67%;
+}
+
+.plusIconInner {
+  position: absolute;
+  inset: 0;
+}
+
+.plusIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Toolbar - URL Controls */
+.urlControlsBar {
+  position: absolute;
+  bottom: 38px;
+  height: 38px;
+  left: 0;
+  right: 0;
+}
+
+.urlControlsBarInner {
+  position: absolute;
+  height: 38px;
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+}
+
+.urlControlsBg {
+  position: absolute;
+  background-color: white;
+  inset: 0;
+}
+
+.urlControlsBgShadow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0px -1px 0px 0px #dadce0;
+}
+
+.rightLockedIcons {
+  position: absolute;
+  height: 22px;
+  overflow: hidden;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 51px;
+}
+
+.iconMore {
+  position: absolute;
+  left: calc(50% + 17.5px);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.iconMoreContainer {
+  position: absolute;
+  inset: 12.5% 39.58% 12.5% 41.67%;
+}
+
+.iconMoreImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.userProfile {
+  position: absolute;
+  left: calc(50% - 14.5px);
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.userProfileImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.urlBar {
+  position: absolute;
+  height: 28px;
+  left: 134px;
+  overflow: hidden;
+  right: 81px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.urlBarBg {
+  position: absolute;
+  background-color: #f1f3f4;
+  height: 28px;
+  left: 0;
+  right: 0;
+  border-radius: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconFavorite {
+  position: absolute;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconFavoriteImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.urlText {
+  position: absolute;
+  height: 16px;
+  left: 33px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 165px;
+}
+
+.urlTextWrapper {
+  position: absolute;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  align-items: center;
+  line-height: 0;
+  left: 0;
+  font-size: 14px;
+  top: 0;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+}
+
+.urlTextMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #202124;
+}
+
+.urlTextMainP {
+  line-height: normal;
+}
+
+.urlTextSecondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #696a6c;
+}
+
+.iconSecure {
+  position: absolute;
+  left: 11px;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconSecureImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.leftLockedIcons {
+  position: absolute;
+  height: 16px;
+  left: 12px;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 109px;
+}
+
+.iconHome {
+  position: absolute;
+  left: calc(50% + 46.5px);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.iconHomeContainer {
+  position: absolute;
+  inset: 12.51% 12.49% 12.5% 12.49%;
+}
+
+.iconHomeImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.iconRefresh {
+  position: absolute;
+  left: calc(50% + 15.5px);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.iconRefreshContainer {
+  position: absolute;
+  inset: 12.5% 12.51% 12.51% 12.5%;
+}
+
+.iconRefreshImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.iconForward {
+  position: absolute;
+  left: calc(50% - 15.5px);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.iconForwardContainer {
+  position: absolute;
+  inset: 12.5% 12.5% 14.41% 12.5%;
+}
+
+.iconForwardImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.iconBack {
+  position: absolute;
+  left: calc(50% - 46.5px);
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.iconBackContainer {
+  position: absolute;
+  inset: 12.5% 12.5% 14.46% 12.5%;
+}
+
+.iconBackImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Tablet Viewport */
+.viewporttablet {
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+}
+
+.windowGrabber {
+  height: 24px;
+  width: 40px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.windowGrabberImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.titleAndControls {
+  height: 49px;
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Trailing buttons - Right */
+.trailingRight {
+  position: absolute;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 16px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  right: 0;
+  top: 0;
+}
+
+/* Trailing buttons - Left */
+.trailingLeft {
+  position: absolute;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 16px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  right: 893px;
+  top: 0;
+}
+
+.buttonText {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.buttonTextP {
+  font-family: 'SF Pro', sans-serif;
+  line-height: 22px;
+  font-style: normal;
+  flex-shrink: 0;
+  font-size: 17px;
+  color: #007aff;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+.titleText {
+  position: absolute;
+  font-family: 'SF Pro', sans-serif;
+  font-weight: 600;
+  line-height: 22px;
+  font-style: normal;
+  left: 50%;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+  top: 11px;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
+
+/* URL Bar */
+.urlBarTablet {
+  position: absolute;
+  backdrop-filter: blur(24px);
+  background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: calc(50% - 0.5px);
+  border-radius: 12px;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.19);
+  top: 4px;
+  transform: translateX(-50%);
+  width: 403px;
+}
+
+.urlBarTabletInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.urlBarTabletLeft {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+.urlBarTabletLeftIcon1,
+.urlBarTabletLeftIcon2 {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.urlBarTabletIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.urlBarTabletCenter {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.urlBarTabletCenterIcon {
+  height: 13px;
+  width: 9px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.urlBarTabletCenterIconImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.urlTextTablet {
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  flex-shrink: 0;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: -0.408px;
+  white-space: nowrap;
+}
+
+.urlTextTabletP {
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.urlBarTabletRight {
+  height: 24px;
+  width: 64px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.urlBarTabletRightImg {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile Viewport */
+.viewportmobile {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.time {
+  height: 10.356px;
+  width: 26.62px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.time img {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.stack {
+  height: 12px;
+  width: 66.6px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.stack img {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
