@@ -82,7 +82,7 @@
 }
 
 .deviceDesktop .privateAreaButtonTextP {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -150,7 +150,7 @@
 }
 
 .deviceDesktop .dropdownMenuItemText {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 400;
   line-height: normal;
   flex-shrink: 0;
@@ -233,7 +233,7 @@
 }
 
 .deviceTablet .privateAreaButtonTextPTablet {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -318,7 +318,7 @@
 }
 
 .deviceMobile .privateAreaButtonTextPMobile {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;

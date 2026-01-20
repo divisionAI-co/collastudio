@@ -47,7 +47,7 @@
 }
 
 .userName {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
@@ -118,7 +118,7 @@
 }
 
 .menuItem .label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;

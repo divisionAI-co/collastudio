@@ -1,0 +1,62 @@
+.expandableBodytext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 402px;
+  position: relative;
+}
+
+.text {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #2b2a26;
+  min-width: 100%;
+  width: min-content;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.textCollapsed {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.textExpanded {
+  overflow: visible;
+  white-space: pre-wrap;
+}
+
+.expandButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.expandText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #8ebfc4;
+  text-align: left;
+  width: 100%;
+  white-space: pre-wrap;
+  position: relative;
+  flex-shrink: 0;
+}

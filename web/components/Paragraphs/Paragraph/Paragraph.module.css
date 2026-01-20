@@ -1,0 +1,108 @@
+.paragraph {
+  background: #eeece0;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  align-items: flex-start;
+  padding-left: var(--viewport-margins, 100px);
+  padding-right: var(--viewport-asymmetric-margins, 522px);
+  padding-top: var(--vertical-spacing-spacing-l, 40px);
+  padding-bottom: var(--vertical-spacing-spacing-l, 40px);
+  width: var(--viewport-breakpoint, 1440px);
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: normal;
+  color: #2b2a26;
+  white-space: pre-wrap;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  font-style: normal;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2b2a26;
+  white-space: pre-wrap;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  font-style: normal;
+  margin: 0;
+}
+
+.expandableBodytext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.bodyText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #2b2a26;
+  white-space: pre-wrap;
+  min-width: 100%;
+  width: min-content;
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.bodyTextCollapsed {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 69px; /* Approximately 3 lines at line-height 23px */
+}
+
+.bodyTextExpanded {
+  overflow: visible;
+}
+
+.paragraphMargin {
+  margin-bottom: 0;
+}
+
+.expandButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.expandText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #7f8e91;
+  text-align: left;
+  width: 100%;
+  white-space: pre-wrap;
+  position: relative;
+  flex-shrink: 0;
+}

@@ -1,0 +1,44 @@
+.textBoxOnImage {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid #f7fdfb;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  width: 646px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  padding: var(--vertical-spacing-spacing-l, 40px);
+  white-space: pre-wrap;
+  position: relative;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dateText {
+  line-height: 1.2;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.title {
+  line-height: 100%;
+  font-size: 32px;
+  color: #f7fdfb;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}

@@ -1,0 +1,87 @@
+.main {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f7fdfb;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #2b2a26;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #7f8e91;
+  margin-bottom: 60px;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.sectionTitle {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #2b2a26;
+  margin-bottom: 30px;
+}
+
+.componentGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.componentItem {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.travelCarouselWrapper {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  overflow: visible;
+  width: 100%;
+}
+
+.componentTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b2a26;
+  margin-bottom: 20px;
+}
+
+.editorialContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.textBoxContainer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.plusContainer {
+  background: linear-gradient(135deg, #2b2a26 0%, #4f4f4f 100%);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}

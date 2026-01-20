@@ -1,0 +1,215 @@
+.editorialParagraph {
+  position: relative;
+  width: 100%;
+  min-height: 1600px;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  max-width: none;
+}
+
+.gradient {
+  position: absolute;
+  inset: 72.19% 0 0 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(43, 42, 38, 0) 0%,
+    rgba(43, 42, 38, 0.71) 44.231%,
+    #2b2a26 100%
+  );
+}
+
+.headline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--viewport-gutter, 30px);
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0 var(--viewport-margins, 100px);
+  padding-top: 0;
+  margin-top: 150px;
+  color: #f7fdfb;
+  white-space: pre-wrap;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  z-index: 1;
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+}
+
+.headlineLeft {
+  justify-content: flex-end;
+}
+
+.headlineRight {
+  justify-content: flex-start;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin-top: 150px;
+}
+
+.smallTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  flex: 1 0 0;
+  max-width: 342px;
+  min-width: 342px;
+  min-height: 1px;
+  position: relative;
+}
+
+.smallTitleLeft {
+  text-align: left;
+}
+
+.smallTitleRight {
+  text-align: right;
+}
+
+.headlineContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  gap: var(--vertical-spacing-spacing-l, 40px);
+  align-items: flex-start;
+  align-content: stretch;
+  max-width: 900px;
+  min-width: 342px;
+  min-height: 1px;
+  line-height: normal;
+  font-style: normal;
+  position: relative;
+}
+
+.paragraph {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 100%;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.title {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 250;
+  font-size: 50px;
+  line-height: 100%;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.content {
+  position: absolute;
+  bottom: 160px;
+  left: 0px;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  gap: var(--viewport-gutter, 30px);
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-bottom: var(--vertical-spacing-spacing-xl, 150px);
+  padding-left: var(--viewport-margins, 100px);
+  padding-right: var(--viewport-margins, 100px);
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.contentLeft {
+  justify-content: flex-start;
+}
+
+.contentRight {
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 160px;
+  left: -200px;
+  right: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  align-items: flex-start;
+  align-content: stretch;
+  justify-content: flex-end;
+  max-width: 606px;
+  min-width: 342px;
+  min-height: 1px;
+  position: relative;
+}
+
+.eventInfo {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid #f7fdfb;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  gap: 10px;
+  align-items: flex-start;
+  align-content: stretch;
+  min-height: 1px;
+  min-width: 1px;
+  padding: var(--viewport-gutter, 30px);
+  color: white;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.dateSubtitle {
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.dateBody {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}

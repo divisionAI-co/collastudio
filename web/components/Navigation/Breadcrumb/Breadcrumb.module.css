@@ -18,7 +18,7 @@
 
 .link,
 .label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 400;
   font-size: var(--text-small-body, 12px);
   line-height: normal;
@@ -31,7 +31,7 @@
 }
 
 .separator {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   font-size: var(--text-tiny, 10px);
   line-height: 1.2;

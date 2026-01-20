@@ -52,7 +52,7 @@
 }
 
 .deviceDesktop.typeDefault .menuVoiceText {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -109,7 +109,7 @@
 }
 
 .deviceDesktop.typeDefault .chatButtonTextP {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -209,7 +209,7 @@
 }
 
 .deviceDesktop.typeDark .menuVoiceTextDark {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -272,7 +272,7 @@
 }
 
 .deviceDesktop.typeDark .chatButtonTextPDark {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -415,7 +415,7 @@
 }
 
 .deviceDesktop.typeWhiteonscroll .chatButtonTextPScroll {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;
@@ -573,7 +573,7 @@
 }
 
 .deviceDesktop.typeDarkonscroll .chatButtonTextPScrollDark {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   line-height: normal;
   flex-shrink: 0;

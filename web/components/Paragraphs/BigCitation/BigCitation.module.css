@@ -1,0 +1,42 @@
+.bigCitation {
+  background-color: #eeece0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-bottom: 150px;
+  padding-left: var(--viewport-margins, 100px);
+  padding-right: var(--viewport-margins, 100px);
+  position: relative;
+}
+
+.text {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  font-weight: 250;
+  font-size: 50px;
+  line-height: normal;
+  color: #7f8e91;
+  text-align: center;
+  white-space: pre-wrap;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  font-style: normal;
+  margin: 0;
+}
+
+.textSpan {
+  line-height: normal;
+}
+
+.linkSpan {
+  line-height: normal;
+  color: #2b2a26;
+}
+
+.link {
+  line-height: normal;
+  color: #2b2a26;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}

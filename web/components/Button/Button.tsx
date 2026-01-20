@@ -85,11 +85,11 @@ export const Button: React.FC<ButtonProps> = ({
       return '#f4f097';
     }
     if (color === 'Black') {
-      if (state === 'On' && type === 'Secondary') return '#2b2a26';
-      if (state === 'Off' && type === 'Secondary') return '#2b2a26';
-      if (state === 'On' && type === 'Main') return '#2b2a26';
-      if (state === 'Off' && type === 'Main') return '#2b2a26';
-      return '#2b2a26';
+      if (state === 'On' && type === 'Secondary') return '#F7FDFB';
+      if (state === 'Off' && type === 'Secondary') return '#F7FDFB';
+      if (state === 'On' && type === 'Main') return '#F7FDFB';
+      if (state === 'Off' && type === 'Main') return '#F7FDFB';
+      return '#F7FDFB';
     }
     return '#f7fdfb';
   };

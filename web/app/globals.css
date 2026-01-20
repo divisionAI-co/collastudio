@@ -1,0 +1,11 @@
+/* Montserrat font from next/font/google is loaded via layout.tsx */
+/* The font is automatically available when montserrat.className is applied to body */
+/* CSS modules can use 'Montserrat' directly in font-family declarations */
+
+/* Zalando Sans SemiExpanded font from @fontsource-variable/zalando-sans-semiexpanded */
+/* Loaded via next/font/local in layout.tsx, available via --font-zalando-sans variable */
+
+/* Remove default margins from all p tags */
+p {
+  margin: 0;
+}
