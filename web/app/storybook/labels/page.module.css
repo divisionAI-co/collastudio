@@ -1,0 +1,78 @@
+.main {
+  min-height: 100vh;
+  background: #1a1a1a;
+  padding: 2rem;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: #f7fdfb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f7fdfb;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: rgba(247, 253, 251, 0.7);
+  margin-bottom: 3rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #f7fdfb;
+  border-bottom: 1px solid rgba(247, 253, 251, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.componentGroup {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.groupTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgba(247, 253, 251, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.componentRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .componentRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

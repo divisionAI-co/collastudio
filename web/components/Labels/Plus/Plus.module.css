@@ -1,0 +1,61 @@
+.plus {
+  backdrop-filter: blur(16.5px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid rgba(247, 253, 250, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.featureContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.starWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+.star {
+  aspect-ratio: 12 / 13;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.starFill {
+  position: absolute;
+  inset: 0;
+  --fill-0: #F4F097;
+}
+
+.starImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  color: #F4F097;
+}
+
+.text {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 10px;
+  color: #f7fdfb;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
