@@ -3,9 +3,9 @@
 import React from 'react';
 import styles from './EditorialParagraph.module.css';
 
-// Figma asset URLs - will be replaced with local paths after download
-const imgOrientationLeft = 'https://www.figma.com/api/mcp/asset/b98399cd-608c-40b2-9b2c-55ddd03a7c47';
-const imgOrientationRight = 'https://www.figma.com/api/mcp/asset/e6472947-4e42-4ca3-a9b2-0f9412f31ad9';
+// Local image assets
+const imgOrientationLeft = '/assets/Paragraphs/figma/Paragraphs/imgOrientationLeft.png';
+const imgOrientationRight = '/assets/Paragraphs/figma/Paragraphs/imgOrientationRight.png';
 
 export type EditorialParagraphOrientation = 'Left' | 'Right';
 

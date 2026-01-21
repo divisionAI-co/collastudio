@@ -2,79 +2,10 @@
   "outputPath": "../public/assets/Paragraphs/figma",
   "assets": [
     {
-      "imgOrientationLeft": "https://www.figma.com/api/mcp/asset/1507045c-482d-49ad-972d-8b733a145dd0"
+      "imgOrientationLeft": "https://www.figma.com/api/mcp/asset/b98399cd-608c-40b2-9b2c-55ddd03a7c47"
     },
     {
-      "imgOrientationRight": "https://www.figma.com/api/mcp/asset/89be78d0-a417-40c2-ad64-c47a46c7e875"
-    },
-    {
-      "imgCalendar": "https://www.figma.com/api/mcp/asset/8dc2c052-4d02-48e3-b7b9-f77d88368925"
-    },
-    {
-      "imgGallery": "https://www.figma.com/api/mcp/asset/5228547c-6e03-474a-a74a-ccc9c8208ecc"
-    },
-    {
-      "imgPhone": "https://www.figma.com/api/mcp/asset/fbd706de-3e3a-4b77-b62b-b36dc8ba5eb3"
-    },
-    {
-      "imgCalendarHotel": "https://www.figma.com/api/mcp/asset/13117264-9241-4f79-b7dd-0dfbbe78255e"
-    },
-    {
-      "imgMap": "https://www.figma.com/api/mcp/asset/522bc5a2-dfd4-4c6a-8563-52da9d4a51fd"
-    },
-    {
-      "imgBed": "https://www.figma.com/api/mcp/asset/8e569cd0-dfa5-40a0-921d-d68bb0ef6f17"
-    },
-    {
-      "imgCheck": "https://www.figma.com/api/mcp/asset/4869442f-62ed-443c-9033-e13a11c56e31"
-    },
-    {
-      "imgInfo": "https://www.figma.com/api/mcp/asset/4d0b0522-885c-4e70-84e9-521295c003e6"
-    },
-    {
-      "imgIllustration": "https://www.figma.com/api/mcp/asset/46b491af-8a07-480e-986d-78f311b6eac4"
-    },
-    {
-      "imgTravelCarousel1": "https://www.figma.com/api/mcp/asset/26c71648-e463-49ac-a080-2545dcf7846a"
-    },
-    {
-      "imgTravelCarousel2": "https://www.figma.com/api/mcp/asset/4dcf8123-fd69-43be-a502-f4e1ec0b3234"
-    },
-    {
-      "imgTravelCarousel3": "https://www.figma.com/api/mcp/asset/d965ea26-11d8-4b9c-b6f1-d668beb8a149"
-    },
-    {
-      "imgTravelCarousel4": "https://www.figma.com/api/mcp/asset/4cd00283-fbc9-492d-8471-4c035ef8ff43"
-    },
-    {
-      "imgTravelCarousel5": "https://www.figma.com/api/mcp/asset/9922bd86-7400-4bb0-ac87-f1372aee6f57"
-    },
-    {
-      "imgTravelCarousel6": "https://www.figma.com/api/mcp/asset/9dbe6008-e225-42ff-bfea-ae928d145b17"
-    },
-    {
-      "imgTravelCarousel7": "https://www.figma.com/api/mcp/asset/ae606ed1-c692-4600-a74d-3f37786c8696"
-    },
-    {
-      "imgTravelCarousel8": "https://www.figma.com/api/mcp/asset/07e4c698-66b6-4f7b-999f-a4c67cdac2f6"
-    },
-    {
-      "imgTravelCarousel9": "https://www.figma.com/api/mcp/asset/0dd53565-8824-4780-9de0-46087be154de"
-    },
-    {
-      "imgTravelCarousel10": "https://www.figma.com/api/mcp/asset/c07c4106-fa77-4446-9067-60ef099c451f"
-    },
-    {
-      "imgTravelCarousel11": "https://www.figma.com/api/mcp/asset/487e0cd2-c0e6-4e88-910a-c260aa61c271"
-    },
-    {
-      "imgTravelCarousel12": "https://www.figma.com/api/mcp/asset/2369f4c0-3b4f-4452-ae09-21240a72b06c"
-    },
-    {
-      "imgTravelCarousel13": "https://www.figma.com/api/mcp/asset/b43d8df5-7b14-452e-97cf-d44580a27024"
-    },
-    {
-      "imgTravelCarousel14": "https://www.figma.com/api/mcp/asset/8fdb9241-06d3-4290-b665-9d913948f4bf"
+      "imgOrientationRight": "https://www.figma.com/api/mcp/asset/e6472947-4e42-4ca3-a9b2-0f9412f31ad9"
     }
   ]
 }

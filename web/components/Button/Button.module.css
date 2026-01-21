@@ -230,9 +230,8 @@
 /* Hover effects */
 .button:not(.disabled):hover {
   opacity: 0.9;
-  transform: translateY(-1px);
 }
 
 .button:not(.disabled):active {
-  transform: translateY(0);
+  opacity: 0.8;
 }

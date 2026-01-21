@@ -3,9 +3,9 @@
 import React from 'react';
 import styles from './Plus.module.css';
 
-// Figma asset URLs - will be replaced with local paths after download
-const imgCheck = 'https://www.figma.com/api/mcp/asset/4869442f-62ed-443c-9033-e13a11c56e31';
-const imgInfo = 'https://www.figma.com/api/mcp/asset/4d0b0522-885c-4e70-84e9-521295c003e6';
+// Local icon assets
+const imgCheck = '/assets/icons/figma/ServiceIcon/Check.svg';
+const imgInfo = '/assets/icons/figma/ServiceIcon/Info.svg';
 
 export interface PlusProps {
   className?: string;

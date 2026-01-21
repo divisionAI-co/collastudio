@@ -5,12 +5,14 @@ import styles from './HotelDetails.module.css';
 import { IconInfo } from '../IconInfo';
 import { Button } from '../../Button';
 
-// Figma asset URLs - will be replaced with local paths after download
-const imgGallery = 'https://www.figma.com/api/mcp/asset/08a56f1b-7ae1-47ee-ba45-cce2c073036d';
-const img = 'https://www.figma.com/api/mcp/asset/82cf41f7-f858-4a2a-b5df-f48309a2314b';
-const img1 = 'https://www.figma.com/api/mcp/asset/9c362381-cc50-47dc-8b22-96b7c7f913ba';
-const img2 = 'https://www.figma.com/api/mcp/asset/3e0ac4ff-5469-45ce-9e1d-9e02d791b4a8';
-const img3 = 'https://www.figma.com/api/mcp/asset/a967c1e8-27db-47cb-b34f-87dd4173035e';
+// Local image asset
+const imgGallery = '/assets/Paragraphs/figma/HotelDetails/imgGallery.jpg';
+// Local icon asset
+const imgPhone = '/assets/icons/figma/ServiceIcon/Phone.svg';
+// Local icon assets
+const imgCalendar = '/assets/icons/figma/ServiceIcon/Calendar.svg';
+const imgMap = '/assets/icons/figma/ServiceIcon/Map.svg';
+const imgBed = '/assets/icons/figma/ServiceIcon/Bed.svg';
 
 export interface HotelDetailsProps {
   className?: string;
@@ -81,7 +83,7 @@ export function HotelDetails({
               >
                 <img
                   alt=""
-                  src={img}
+                  src={imgPhone}
                   style={{
                     display: 'block',
                     maxWidth: 'none',
@@ -118,7 +120,7 @@ export function HotelDetails({
             title={checkInDate}
             text1={checkInTime}
             text2={checkOutTime}
-            iconSrc={img1}
+            iconSrc={imgCalendar}
             iconLabelWidth="9.625px"
             iconLabelHeight="11px"
             iconDataName="Service icon/Calendar"
@@ -128,7 +130,7 @@ export function HotelDetails({
             title="Property address"
             text1={address}
             showText2={false}
-            iconSrc={img2}
+            iconSrc={imgMap}
             iconLabelWidth="8.25px"
             iconLabelHeight="10.984px"
             iconDataName="Service icon/Map"
@@ -138,7 +140,7 @@ export function HotelDetails({
             title={roomType}
             text1={roomDetails}
             showText2={false}
-            iconSrc={img3}
+            iconSrc={imgBed}
             iconLabelWidth="13.75px"
             iconLabelHeight="9.625px"
             iconDataName="Service icon/Bed"
