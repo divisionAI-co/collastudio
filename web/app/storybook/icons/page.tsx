@@ -421,8 +421,24 @@ export default function IconsStorybookPage() {
                 <span className={styles.iconLabel}>Union</span>
               </div>
               <div className={styles.iconItem}>
-                <ServiceIcon type="ArrowToBottom" />
-                <span className={styles.iconLabel}>Arrow To Bottom</span>
+                <ServiceIcon type="Payment" />
+                <span className={styles.iconLabel}>Payment</span>
+              </div>
+              <div className={styles.iconItem}>
+                <ServiceIcon type="Cancellation" />
+                <span className={styles.iconLabel}>Cancellation</span>
+              </div>
+              <div className={styles.iconItem}>
+                <ServiceIcon type="Switch" />
+                <span className={styles.iconLabel}>Switch</span>
+              </div>
+              <div className={styles.iconItem}>
+                <ServiceIcon type="Password" />
+                <span className={styles.iconLabel}>Password</span>
+              </div>
+              <div className={styles.iconItem}>
+                <ServiceIcon type="PlanSolid" />
+                <span className={styles.iconLabel}>Plan Solid</span>
               </div>
             </div>
           </div>

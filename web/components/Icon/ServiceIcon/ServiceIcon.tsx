@@ -63,7 +63,11 @@ export type ServiceIconType =
   | 'Info'
   | 'Kilometers'
   | 'Union'
-  | 'ArrowToBottom';
+  | 'Payment'
+  | 'Cancellation'
+  | 'Switch'
+  | 'Password'
+  | 'PlanSolid';
 
 export interface ServiceIconProps {
   type: ServiceIconType;
@@ -110,7 +114,11 @@ export const ServiceIcon: React.FC<ServiceIconProps> = ({ type, className = '', 
     'Shop',
     'Kilometers',
     'Union',
-    'ArrowToBottom',
+    'Payment',
+    'Cancellation',
+    'Switch',
+    'Password',
+    'PlanSolid',
   ].includes(type);
   const padding = hasLargePadding ? 10 : 3;
   const iconSize = size - padding * 2;

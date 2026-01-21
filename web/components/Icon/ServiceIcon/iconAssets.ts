@@ -75,7 +75,12 @@ export const serviceIconAssets: Record<string, string> = {
   QRCode: '/assets/icons/figma/ServiceIcon/QRCode.svg',
   Kilometers: 'data:image/svg+xml,%3Csvg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M10.75 6.6875C10.293 6.6875 9.9375 6.33203 9.9375 5.875C9.9375 5.44336 10.293 5.0625 10.75 5.0625H14.8125C15.2441 5.0625 15.625 5.44336 15.625 5.875V9.9375C15.625 10.3945 15.2441 10.75 14.8125 10.75C14.3555 10.75 14 10.3945 14 9.9375V7.85547L9.68359 12.1465C9.37891 12.4766 8.8457 12.4766 8.54102 12.1465L5.875 9.48047L2.37109 12.959C2.06641 13.2891 1.5332 13.2891 1.22852 12.959C0.898438 12.6543 0.898438 12.1211 1.22852 11.8164L5.29102 7.75391C5.5957 7.42383 6.12891 7.42383 6.43359 7.75391L9.125 10.4199L12.832 6.6875H10.75Z" fill="white"/%3E%3C/svg%3E', // Exact SVG from Figma (data URI)
   Union: '/assets/icons/figma/ServiceIcon/Union.svg',
-  ArrowToBottom: '/assets/icons/figma/ServiceIcon/ArrowToBottom.svg',
+  // New icons
+  Payment: '/assets/icons/figma/ServiceIcon/ServiceIconNew/Payment.svg',
+  Cancellation: '/assets/icons/figma/ServiceIcon/ServiceIconNew/Cancellation.svg',
+  Switch: '/assets/icons/figma/ServiceIcon/ServiceIconNew/Switch.svg',
+  Password: '/assets/icons/figma/ServiceIcon/ServiceIconNew/Password.svg',
+  PlanSolid: '/assets/icons/figma/ServiceIcon/ServiceIconNew/PlanSolid.svg',
 };
 
 // Icon dimensions from Figma
@@ -138,6 +143,10 @@ export const iconDimensions: Record<string, { width: number; height: number }> =
   Shop: { width: 10.5, height: 12 },
   Kilometers: { width: 17, height: 17 },
   Union: { width: 12, height: 13 },
-  ArrowToBottom: { width: 12, height: 13 },
+  Payment: { width: 14.625, height: 11.375 },
+  Cancellation: { width: 13, height: 13 },
+  Switch: { width: 12.213, height: 11.375 },
+  Password: { width: 12.188, height: 13 },
+  PlanSolid: { width: 14.625, height: 13 },
   Google: { width: 13.458, height: 13.458 },
 };

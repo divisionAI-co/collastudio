@@ -1,0 +1,20 @@
+{
+  "outputPath": "../public/assets/icons/figma/ServiceIcon",
+  "assets": [
+    {
+      "Payment": "https://www.figma.com/api/mcp/asset/2bcdce2e-2dc0-4a70-9894-59076deee440"
+    },
+    {
+      "Cancellation": "https://www.figma.com/api/mcp/asset/d79935ee-a644-46fc-aa63-1d9b5c673135"
+    },
+    {
+      "Switch": "https://www.figma.com/api/mcp/asset/499cd73b-bb66-4678-9e99-717f33d87a5a"
+    },
+    {
+      "Password": "https://www.figma.com/api/mcp/asset/b97a0b51-1cfa-4630-94c3-f5dbed8c14d1"
+    },
+    {
+      "PlanSolid": "https://www.figma.com/api/mcp/asset/6b2c1255-77b3-4a16-8809-12c51985b5ab"
+    }
+  ]
+}
