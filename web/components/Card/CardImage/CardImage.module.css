@@ -1,0 +1,34 @@
+.cardImage {
+  height: 400px;
+  position: relative;
+  width: 284px;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.imageElement {
+  position: absolute;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 67.5%,
+    rgba(0, 0, 0, 0.5) 100%
+  ),
+  linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}

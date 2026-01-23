@@ -1,0 +1,96 @@
+.cardTravelServiceClasses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+  width: 393px;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 5px;
+}
+
+.imageElement {
+  position: absolute;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.darkOverlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  border-radius: 5px;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  max-width: 393px;
+  padding: 15px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #ffffff;
+  width: 100%;
+}
+
+.typeText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleText {
+  font-family: var(--font-zalando-sans), sans-serif;
+  min-width: 100%;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 20px;
+  width: min-content;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+  padding: 15px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.plus {
+  flex-shrink: 0;
+}

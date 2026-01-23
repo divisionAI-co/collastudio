@@ -20,6 +20,12 @@ const components: ComponentCard[] = [
     category: 'Interactive',
   },
   {
+    name: 'Cards',
+    description: 'Card components including destination cards, travel cards, blog cards, and more',
+    route: '/storybook/cards',
+    category: 'Display',
+  },
+  {
     name: 'Labels',
     description: 'Review scores, badges, and travel specification labels',
     route: '/storybook/labels',
@@ -77,6 +83,9 @@ export default function StorybookDashboard() {
           <h1 className={styles.title}>Storybook Dashboard</h1>
           <p className={styles.subtitle}>
             Browse and explore all UI components from the design system
+          </p>
+          <p className={styles.totalComponents}>
+            Total Components: <strong>{components.length}</strong>
           </p>
         </div>
 
@@ -149,12 +158,6 @@ export default function StorybookDashboard() {
               </div>
             </Link>
           ))}
-        </div>
-
-        <div className={styles.footer}>
-          <p className={styles.footerText}>
-            Total Components: <strong>{components.length}</strong>
-          </p>
         </div>
       </div>
     </main>

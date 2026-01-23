@@ -1,0 +1,256 @@
+.blogCard {
+  border: 1px solid #8ebfc4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: clip;
+  position: relative;
+  border-radius: 10px;
+  width: 296px;
+}
+
+.visual {
+  display: flex;
+  height: 266px;
+  align-items: flex-start;
+  overflow: clip;
+  padding: 8px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.visualImage {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tag {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.lineTop,
+.lineBottom {
+  height: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.lineOverlay {
+  position: absolute;
+  inset: -1px 0 0 0;
+}
+
+.lineImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.mainInfo {
+  background: #eeece0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.titleText {
+  font-family: var(--font-zalando-sans), sans-serif;
+  height: 104px;
+  line-height: 1.2;
+  font-style: normal;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: pre-wrap;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.metricsContainer {
+  display: flex;
+  gap: 24px;
+  height: 29px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.distanceContainer,
+.elevationContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.distanceIcon,
+.stopwatchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.distanceIcon :global(img),
+.stopwatchIcon :global(img) {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.stopwatchIcon {
+  padding: 10px;
+}
+
+.length,
+.elevation {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.elevation {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 2px;
+  align-items: flex-start;
+  line-height: 1.2;
+  color: #7f8e91;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.metricText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.readMoreButton {
+  background: #eeece0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 15px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.cta {
+  backdrop-filter: blur(16.5px);
+  display: flex;
+  gap: 5px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.createButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ctaText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.underline {
+  height: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.underlineOverlay {
+  position: absolute;
+  inset: -1px 0 0 0;
+}
+
+.underlineImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.chevronIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.chevronIcon :global(img) {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}

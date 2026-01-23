@@ -9,6 +9,7 @@ export interface SpecsTravelProps {
   km?: string;
   showEasy?: boolean;
   className?: string;
+  variant?: 'default' | 'dark';
 }
 
 export function SpecsTravel({
@@ -16,7 +17,10 @@ export function SpecsTravel({
   km = '102 km ',
   showEasy = true,
   className,
+  variant = 'default',
 }: SpecsTravelProps) {
+  const isDark = variant === 'dark';
+  
   return (
     <div
       className={`${styles.specsTravel} ${className || ''}`}
@@ -24,7 +28,7 @@ export function SpecsTravel({
       data-node-id="2084:3977"
     >
       <div
-        className={styles.difficulty}
+        className={`${styles.difficulty} ${isDark ? styles.difficultyDark : ''}`}
         data-name="Difficulty"
         data-node-id="2084:3967"
       >
@@ -42,7 +46,7 @@ export function SpecsTravel({
         )}
       </div>
       <div
-        className={styles.duration}
+        className={`${styles.duration} ${isDark ? styles.durationDark : ''}`}
         data-name="Duration"
         data-node-id="2084:3969"
       >
@@ -54,7 +58,7 @@ export function SpecsTravel({
         </p>
       </div>
       <div
-        className={styles.distance}
+        className={`${styles.distance} ${isDark ? styles.distanceDark : ''}`}
         data-name="Distance"
         data-node-id="2084:3971"
       >

@@ -27,3 +27,6 @@ export type { FrameProps } from './Frame';
 
 export { TravelCarousel } from './TravelCarousel';
 export type { TravelCarouselProps, TravelCarouselFeature } from './TravelCarousel';
+
+export { FlightTransferDetails } from './FlightTransferDetails';
+export type { FlightTransferDetailsProps } from './FlightTransferDetails';

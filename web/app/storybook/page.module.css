@@ -33,6 +33,19 @@
   color: rgba(247, 253, 251, 0.7);
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.totalComponents {
+  font-size: 1rem;
+  color: rgba(247, 253, 251, 0.6);
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.totalComponents strong {
+  color: #f4f097;
+  font-weight: 600;
 }
 
 .cardsGrid {

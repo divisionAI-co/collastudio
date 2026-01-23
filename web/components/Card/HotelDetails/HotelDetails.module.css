@@ -1,0 +1,397 @@
+.hotelDetails {
+  background: #f7fdfb;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  width: 355.5px;
+}
+
+.image {
+  height: 139px;
+  position: relative;
+  border-radius: 2.5px;
+  flex-shrink: 0;
+  width: 113px;
+}
+
+.imageElement {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 2.5px;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.nameContact {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hotelNameSection {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  line-height: 0;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  color: #2b2a26;
+}
+
+.hotelLabel {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  height: 12px;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.hotelLabel p {
+  line-height: 1.2;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.hotelNameText {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+.hotelNameText p {
+  line-height: 23px;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.contactButton {
+  backdrop-filter: blur(16.5px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.phoneIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.iconLabel {
+  position: relative;
+  flex-shrink: 0;
+  height: 10.986px;
+  width: 10.986px;
+}
+
+.iconFill {
+  position: absolute;
+  inset: 0;
+}
+
+.iconImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.phoneIcon .iconImage {
+  filter: brightness(0);
+}
+
+.dates {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.calendarIcon {
+  display: flex;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+}
+
+.calendarIcon .iconLabel {
+  height: 9.842px;
+  width: 8.612px;
+}
+
+.calendarIcon .iconImage,
+.mapIcon .iconImage,
+.bedIcon .iconImage {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%); /* Converts to #7F8E91 */
+}
+
+.datesContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  font-size: 10px;
+}
+
+.datesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  width: 100%;
+}
+
+.datesText p {
+  line-height: 1.2;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.checkIn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  width: 100%;
+}
+
+.checkInLabel {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.checkInValue {
+  position: relative;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.checkOut {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  width: 100%;
+}
+
+.checkOutLabel {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.checkOutValue {
+  position: relative;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.address {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.mapIcon {
+  display: flex;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+}
+
+.mapIcon .iconLabel {
+  height: 9.828px;
+  width: 7.382px;
+}
+
+.addressContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  font-size: 10px;
+}
+
+.addressLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  width: 100%;
+}
+
+.addressLabel p {
+  line-height: 1.2;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.addressText {
+  text-decoration: solid underline;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  width: 100%;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.room {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.bedIcon {
+  display: flex;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+}
+
+.bedIcon .iconLabel {
+  height: 8.612px;
+  width: 12.303px;
+}
+
+.roomContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  font-size: 10px;
+}
+
+.roomType {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  width: 100%;
+}
+
+.roomType p {
+  line-height: 1.2;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.roomDetails {
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  width: 100%;
+  white-space: pre-wrap;
+  margin: 0;
+}

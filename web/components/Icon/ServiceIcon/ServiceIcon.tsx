@@ -73,9 +73,10 @@ export interface ServiceIconProps {
   type: ServiceIconType;
   className?: string;
   size?: number;
+  iconSize?: number;
 }
 
-export const ServiceIcon: React.FC<ServiceIconProps> = ({ type, className = '', size = 17 }) => {
+export const ServiceIcon: React.FC<ServiceIconProps> = ({ type, className = '', size = 17, iconSize: customIconSize }) => {
   const classes = [styles.serviceIcon, className].filter(Boolean).join(' ');
 
   const iconStyle: React.CSSProperties = {
@@ -121,7 +122,11 @@ export const ServiceIcon: React.FC<ServiceIconProps> = ({ type, className = '', 
     'PlanSolid',
   ].includes(type);
   const padding = hasLargePadding ? 10 : 3;
-  const iconSize = size - padding * 2;
+  const calculatedIconSize = size - padding * 2;
+
+  // Use customIconSize if provided, otherwise use dimensions or calculated size
+  const finalIconWidth = customIconSize !== undefined ? customIconSize : (dimensions ? dimensions.width : calculatedIconSize);
+  const finalIconHeight = customIconSize !== undefined ? customIconSize : (dimensions ? dimensions.height : calculatedIconSize);
 
   // Handle data URI SVGs (like Kilometers)
   const isDataUri = iconUrl.startsWith('data:');
@@ -132,8 +137,8 @@ export const ServiceIcon: React.FC<ServiceIconProps> = ({ type, className = '', 
         <div
           className={styles.iconImage}
           style={{
-            width: dimensions ? `${dimensions.width}px` : `${iconSize}px`,
-            height: dimensions ? `${dimensions.height}px` : `${iconSize}px`,
+            width: `${finalIconWidth}px`,
+            height: `${finalIconHeight}px`,
           }}
         >
           {isDataUri ? (

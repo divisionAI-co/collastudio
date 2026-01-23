@@ -1,0 +1,730 @@
+.cardStepSlide {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.cardContainer {
+  background: #f4f097;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  padding: 0 clamp(20px, 100px, 10%);
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.cardContainerOff {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px -10px 44px 10px rgba(38, 38, 34, 0.08);
+}
+
+.cardContainerOn {
+  box-shadow: 0px -10px 44px 20px rgba(38, 38, 34, 0.2);
+}
+
+/* Mobile specific styles handled via conditional classes */
+
+.visualContainerMobile {
+  position: relative;
+  margin-top: 0;
+  height: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 512px;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.stepHeader {
+  border-bottom: 1px dashed #9b9b99;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  padding-top: 150px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .stepHeader {
+    padding-top: 40px;
+    margin-top: 0;
+  }
+}
+
+.stepNumber {
+  flex: 1 0 0;
+  font-family: var(--font-zalando-sans), sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  min-height: 1px;
+  min-width: min(342px, 100%);
+  max-width: 100%;
+  font-style: normal;
+  opacity: 0.5;
+  position: relative;
+  color: #7f8e91;
+  font-size: clamp(80px, 200px, 20vw);
+  white-space: pre-wrap;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.plusAndTitle {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 700px;
+  min-height: 1px;
+  min-width: min(342px, 100%);
+  position: relative;
+  width: 100%;
+}
+
+.consultantTag {
+  backdrop-filter: blur(16.5px);
+  background: #8ebfc4;
+  border: 0.5px solid rgba(247, 253, 250, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  position: relative;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.featureContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.starWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+
+.star {
+  aspect-ratio: 12 / 13;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.starFill {
+  position: absolute;
+  inset: 0;
+}
+
+.starImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.consultantText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 10px;
+  color: #2b2a26;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.title {
+  font-family: var(--font-zalando-sans), sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  min-width: 100%;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 32px;
+  width: min-content;
+  white-space: pre-wrap;
+}
+
+.stepBody {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .stepBody {
+    flex-direction: column;
+  }
+}
+
+.visualContainer {
+  position: relative;
+  flex: 0 0 auto;
+  width: 512px;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 0;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .visualContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.visual2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.calendar {
+  position: relative;
+  background: #f7fdfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.451px;
+  border-radius: 6.901px;
+  margin-bottom: 35.07px;
+}
+
+.calendarCaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.calendarChevronLeft,
+.calendarChevronRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.chevronIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.294px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 7.332px;
+  height: 7.332px;
+}
+
+.iconLabel {
+  height: 4.723px;
+  position: relative;
+  flex-shrink: 0;
+  width: 2.537px;
+}
+
+.iconImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0);
+}
+
+.calendarMonthYear {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.month,
+.year {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.month {
+  padding: 1.725px 3.451px;
+}
+
+.year {
+  padding: 1.725px 0;
+}
+
+.monthText,
+.yearText {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: #0a0a0a;
+  font-size: 6.04px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.monthText p,
+.yearText p {
+  line-height: 9.92px;
+}
+
+.calendarBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.weekdays {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.weekday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5.176px 7.332px;
+  position: relative;
+  flex-shrink: 0;
+  width: 20.703px;
+}
+
+.weekdayText {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 6.039px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.weekdayText p {
+  line-height: 8.195px;
+  color: #2b2a26;
+}
+
+.weekdayTextGray p {
+  color: #0a0a0a;
+}
+
+.weekdayTextRed p {
+  color: #d55c5c;
+}
+
+.separator {
+  height: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.separatorOverlay {
+  position: absolute;
+  inset: -0.22px 0;
+}
+
+.separatorImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.calendarDays {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.week {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.week:first-child {
+  justify-content: flex-end;
+  opacity: 0.35;
+}
+
+.week:nth-child(2) {
+  opacity: 0.35;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5.176px 8.626px;
+  position: relative;
+  flex-shrink: 0;
+  width: 20.703px;
+  height: 20.703px;
+}
+
+.dayText {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 6.039px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.dayText p {
+  line-height: 8.195px;
+  color: #2b2a26;
+}
+
+.dayTextGray p {
+  color: #9b9b99;
+}
+
+.dayTextRed p {
+  color: #d55c5c;
+}
+
+.daySelected {
+  background: #f4f097;
+  border-radius: 0;
+}
+
+.daySelectedFirst {
+  border-radius: 10.352px 0 0 10.352px !important;
+}
+
+.daySelectedLast {
+  border-radius: 0 10.352px 10.352px 0 !important;
+}
+
+.visualImage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 252.8px;
+  height: 229px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 181.609px;
+  border-radius: 3.632px;
+  width: 215px;
+  margin: 0 auto;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 3.632px;
+}
+
+.imageElement {
+  position: absolute;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 3.632px;
+  width: 100%;
+  height: 100%;
+}
+
+.imageDarken {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  border-radius: 3.632px;
+}
+
+.imageTags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7.264px;
+  align-items: start;
+  justify-items: start;
+  align-content: end;
+  padding: 10.897px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.imageTag {
+  backdrop-filter: blur(11.986px);
+  background: #f4f097;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7.264px 10.897px;
+  position: relative;
+  border-radius: 3.632px;
+  flex-shrink: 0;
+}
+
+.tagContent {
+  display: flex;
+  gap: 7.264px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tagStarWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  padding-right: 7px;
+}
+
+.tagStar {
+  aspect-ratio: 12 / 13;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tagStarFill {
+  position: absolute;
+  inset: 0;
+}
+
+.tagStarImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0);
+}
+
+.tagText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 7.264px;
+  text-transform: uppercase;
+}
+
+.visualSmall {
+  position: relative;
+  height: 102px;
+  max-width: min(253px, calc(100% - 20px));
+  width: 123px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 83px;
+}
+
+.visualSmallImage {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 605px;
+  min-height: 1px;
+  min-width: 342px;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.stepBodyMobile {
+  display: flex;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .bodyContent {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.paragraph {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 700px;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 14px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.paymentInfo {
+  background: #faf8cf;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  max-width: 700px;
+  min-width: 250px;
+  padding: 15px;
+  position: relative;
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.paymentField {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  overflow: clip;
+  position: relative;
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.paymentFieldContent {
+  display: flex;
+  flex: 1 0 0;
+  gap: 0px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.paymentText {
+  flex: 1 0 0;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  color: #2b2a26;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.paymentFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.paymentFooterText {
+  flex: 1 0 0;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  color: #7f8e91;
+  font-size: 10px;
+  white-space: pre-wrap;
+}

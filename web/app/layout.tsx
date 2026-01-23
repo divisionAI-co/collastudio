@@ -11,11 +11,16 @@ const montserrat = Montserrat({
 });
 
 const zalandoSans = localFont({
-  src: '../node_modules/@fontsource-variable/zalando-sans-semiexpanded/files/zalando-sans-semiexpanded-latin-wght-normal.woff2',
-  weight: '100 900',
-  style: 'normal',
+  src: [
+    {
+      path: '../public/fonts/zalando-sans-semiexpanded-latin-wght-normal.woff2',
+      weight: '100 900',
+      style: 'normal',
+    },
+  ],
   variable: '--font-zalando-sans',
   display: 'swap',
+  fallback: ['sans-serif'],
 });
 
 export const metadata = {

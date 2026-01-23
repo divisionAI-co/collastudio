@@ -41,6 +41,8 @@ services:
       # Prevent overwriting node_modules
       - /app/node_modules
       - /app/.next
+      # Persist fonts directory
+      - web_fonts:/app/public/fonts
 
   db:
     image: postgres:16-alpine
@@ -57,3 +59,4 @@ services:
 
 volumes:
   db_data:
+  web_fonts:

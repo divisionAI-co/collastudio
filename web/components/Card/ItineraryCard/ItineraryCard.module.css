@@ -1,0 +1,607 @@
+.itineraryCard {
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 15px;
+  position: relative;
+  border-radius: 10px;
+  width: 814px;
+}
+
+.imageOff {
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 300px;
+  position: relative;
+  border-radius: 5px;
+  height: 119px;
+}
+
+.mapWaypoint {
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 300px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.imageElement {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 300px;
+  padding: 10px;
+  position: relative;
+}
+
+.contentOn {
+  gap: 15px;
+}
+
+.contentOff {
+  gap: 0;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.tags {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.dayBadge {
+  backdrop-filter: blur(16.5px);
+  background: #f4f097;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.dayBadge :global(.plus) {
+  background: transparent;
+  border: none;
+  padding: 0;
+  backdrop-filter: none;
+}
+
+.dayBadge :global(.text) {
+  color: #2b2a26;
+  padding-left: 0;
+}
+
+.dayBadgeText {
+  color: #000000 !important;
+}
+
+.plusContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  padding-left: 0 !important;
+  
+}
+
+.dateText {
+  flex: 1 0 0;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  color: #2b2a26;
+  font-size: 14px;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.chevronButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  outline: none;
+  width: 23px;
+  height: 23px;
+  min-width: 23px;
+  min-height: 23px;
+}
+
+.chevronButton:hover {
+  opacity: 0.7;
+}
+
+.chevronButton:focus-visible {
+  outline: 2px solid #2b2a26;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.chevronIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.chevronIcon :global(.serviceIcon) {
+  color: #2b2a26;
+}
+
+.chevronIcon :global(img) {
+  filter: brightness(0) saturate(100%);
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.titleText {
+  font-family: var(--font-zalando-sans), sans-serif;
+  line-height: normal;
+  min-width: 100%;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 24px;
+  width: min-content;
+  white-space: pre-wrap;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.titleTextCollapsed {
+  font-family: var(--font-zalando-sans), sans-serif;
+  line-height: normal;
+  min-width: 100%;
+  font-style: normal;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 24px;
+  text-overflow: ellipsis;
+  width: min-content;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.metricsContainer {
+  display: flex;
+  gap: 24px;
+  height: 29px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.distanceContainer,
+.elevationContainer,
+.durationContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.distanceIcon,
+.stopwatchIcon,
+.elevationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+}
+
+.distanceIcon :global(img),
+.stopwatchIcon :global(img),
+.elevationIcon :global(img) {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+}
+
+.distanceIcon :global(.serviceIcon) :global(.iconImage),
+.distanceIcon :global(.iconImage) {
+  width: 14px !important;
+  height: 14px !important;
+  max-width: 14px !important;
+  max-height: 14px !important;
+  min-width: 14px !important;
+  min-height: 14px !important;
+}
+
+.elevationIconImage {
+  width: 17px;
+  height: 17px;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+}
+
+.length,
+.elevation,
+.duration {
+  display: flex;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 2px;
+  align-items: flex-start;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #9b9b99;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.metricText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #9b9b99;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.flightTransferDetails {
+  background: #f7fdfb;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.flightTransferContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.flightSection {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 272px;
+  position: relative;
+}
+
+.flightName {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  line-height: normal;
+  padding-bottom: 10px;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  width: 100%;
+}
+
+.sectionLabel {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  height: 12px;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sectionValue {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 14px;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.timeTable {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.timeTableIcon {
+  display: flex;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 2.684px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.timeTableIcon :global(img) {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.timeTableContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  font-size: 10px;
+}
+
+.timeInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  width: 100%;
+}
+
+.timeLabel {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.timeValue {
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.bookingReference {
+  background: #faf8cf;
+  display: flex;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px 17px;
+  position: relative;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.bookingLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 10px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.bookingValue {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  font-size: 10px;
+  margin: 0;
+}
+
+.checkInButton {
+  backdrop-filter: blur(16.5px);
+  background: #2b2a26;
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 176px;
+}
+
+.checkInText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(38, 38, 34, 0.2);
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.transferDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.transferName {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  line-height: normal;
+  padding-bottom: 10px;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  width: 100%;
+}
+
+.transferInfo {
+  display: flex;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.transferIcon {
+  display: flex;
+  height: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 2.684px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.transferIcon :global(img) {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1000%) hue-rotate(160deg) brightness(95%) contrast(88%);
+}
+
+.transferContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  font-size: 10px;
+}
+
+.transferText {
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #7f8e91;
+  width: 100%;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.expandableBodytext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.hotelDetails {
+  background: #f7fdfb;
+  border: 1px solid rgba(38, 38, 34, 0.2);
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 95%;
+}

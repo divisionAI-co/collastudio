@@ -1,0 +1,50 @@
+.videoYt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 340px;
+}
+
+.visual {
+  aspect-ratio: 439 / 238;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.visualImage {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: contain;
+  pointer-events: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  padding: 15px 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.titleText {
+  flex: 1 0 0;
+  font-family: var(--font-zalando-sans), sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  color: #f7fdfb;
+  font-size: 20px;
+  white-space: pre-wrap;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+{
+  "outputPath": "../public/assets/Card/figma",
+  "assets": [
+    {
+      "img": "https://www.figma.com/api/mcp/asset/699f8b79-1f3c-4994-9031-a5cb045ca3f3"
+    },
+    {
+      "img1": "https://www.figma.com/api/mcp/asset/5e444b8c-ebe5-490e-bf72-800862217689"
+    }
+  ]
+}

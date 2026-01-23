@@ -1,0 +1,233 @@
+.cardTravel {
+  height: 411px;
+  overflow: clip;
+  position: relative;
+  border-radius: 10px;
+  width: 266px;
+}
+
+.image {
+  position: absolute;
+  aspect-ratio: 284 / 411;
+  left: -14px;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.imageBlurOff {
+  filter: blur(3px);
+}
+
+.imageBlurOn {
+  filter: blur(3.5px);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.imageElement {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 67.5%,
+    rgba(0, 0, 0, 0.5) 100%
+  ),
+  linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.topContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 0;
+  padding: 10px;
+  right: 0;
+  top: 0;
+}
+
+.specsTravel {
+  display: flex;
+  gap: 2px;
+  height: 25px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.bottomContainer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  left: 0;
+  padding: 10px;
+  right: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.destinationBadge {
+  backdrop-filter: blur(12px);
+  background: #eeece0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.destinationText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleText {
+  font-family: var(--font-zalando-sans), sans-serif;
+  line-height: 1.2;
+  min-width: 100%;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #ffffff;
+  width: min-content;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.priceContainer {
+  display: flex;
+  
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 15px;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+  flex-shrink: 0;
+  width: 88%;
+}
+
+.priceContainerOff {
+  background: #f4f097;
+}
+
+.priceContainerOn {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.favoriteIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.favoriteIconOff {
+  filter: brightness(0);
+}
+
+.favoriteIconOff :global(img) {
+  filter: brightness(0);
+}
+
+.pricing {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  width: 170px;
+}
+
+.pricingOff {
+  color: #2b2a26;
+}
+
+.pricingOn {
+  color: #ffffff;
+}
+
+.startingFrom {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin: 0;
+}
+
+.price {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.priceAmount {
+  font-family: var(--font-zalando-sans), sans-serif;
+  line-height: 1.2;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 20px;
+  margin: 0;
+}
+
+.priceCurrency {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+  margin: 0;
+}

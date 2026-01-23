@@ -1,0 +1,23 @@
+{
+  "outputPath": "../public/assets/Card/figma",
+  "assets": [
+    {
+      "imgVisual": "https://www.figma.com/api/mcp/asset/600ee80b-f626-471d-9a5b-8b8c77d624f0"
+    },
+    {
+      "imgLine3": "https://www.figma.com/api/mcp/asset/3cd16ee0-c832-4a28-be0e-55c93a256ddd"
+    },
+    {
+      "img": "https://www.figma.com/api/mcp/asset/4483afc0-b470-4c3e-b5d4-f87093f0f02f"
+    },
+    {
+      "img1": "https://www.figma.com/api/mcp/asset/8d3b18f1-6b12-4416-9a9a-82b98ca084cf"
+    },
+    {
+      "img2": "https://www.figma.com/api/mcp/asset/a595d58f-6479-4946-9f2d-15069b347b76"
+    },
+    {
+      "img3": "https://www.figma.com/api/mcp/asset/67bafb32-03a6-4643-90f4-a07164a871e5"
+    }
+  ]
+}
