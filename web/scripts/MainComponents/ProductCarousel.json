@@ -1,0 +1,14 @@
+{
+  "outputPath": "../public/assets/MainComponents/ProductCarousel/figma",
+  "assets": [
+    { "imgImage": "https://www.figma.com/api/mcp/asset/24e1474b-ac4d-4ced-ac90-e403aa73643a" },
+    { "imgStarEasy": "https://www.figma.com/api/mcp/asset/508ec965-f4b6-4d32-aeb8-249885ce1380" },
+    { "imgStarMild": "https://www.figma.com/api/mcp/asset/59f95f72-a144-44eb-b521-e557a53024d6" },
+    { "imgStarHard": "https://www.figma.com/api/mcp/asset/0ebcf552-2dbe-488b-b32e-530a57bd8845" },
+    { "imgFavoriteIcon": "https://www.figma.com/api/mcp/asset/1bb51605-2f6b-4193-b258-24c4aea78c59" },
+    { "imgChevronRight": "https://www.figma.com/api/mcp/asset/d953ee59-e2ed-4b46-b887-0e9e960ccca7" },
+    { "imgChevronLeft": "https://www.figma.com/api/mcp/asset/84f9025e-5f87-4527-bd5b-6d8edb29b47b" },
+    { "imgDotActive": "https://www.figma.com/api/mcp/asset/e723b7dd-ae2c-46b6-9142-6c0ad9e1264a" },
+    { "imgDotInactive": "https://www.figma.com/api/mcp/asset/fc12db18-8891-486d-ab69-230f6ba1040e" }
+  ]
+}

@@ -1,0 +1,12 @@
+.footerLogo {
+  position: relative;
+  height: 59px;
+  width: 96px;
+}
+
+.logoImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}

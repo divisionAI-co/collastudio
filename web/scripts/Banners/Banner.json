@@ -1,0 +1,11 @@
+{
+  "outputPath": "../public/assets/Banners/figma",
+  "assets": [
+    {
+      "imgTypeBig": "https://www.figma.com/api/mcp/asset/e355a6da-edcf-41a6-80ec-494a1ca5ccb3"
+    },
+    {
+      "imgTypeSmall": "https://www.figma.com/api/mcp/asset/49dbf954-a31d-4986-9979-6f6e807bc8b8"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+---
+name: Project Standard Rules
+description: Unified rules for Architecture, Layout Strategy, and Figma Asset Workflow.
+---
+
+# 1. Architecture & General Rules
+
+## Core Principles
+- **Functional Hierarchy:** Preserve the logical structure of Figma, BUT prune redundant layers.
+- **The "Ghost Node" Rule:**
+    - If a Figma Group/Frame exists ONLY for organization (e.g., "NameContainer" inside "InfoContainer") and applies **no** visual styles (bg, border) or layout constraints (padding, gap), **DO NOT RENDER IT AS A DIV**.
+    - Render the child content directly.
+- **Composition:** Use composition over large monolithic components. Nested layers = child components.
+- **Strictness:** Match Figma values exactly for padding, font-size, and gap.
+
+## Storybook Rule
+- Every UI component must have a corresponding Storybook story.
+- Components must be built/validated in isolation, not inside application pages.
+- Stories should represent the component's default and key states only.
+
+## Component Layer Isolation
+**CRITICAL: Layer Independence and Component Ownership**
+1. **Structure:** `web/components/{Layer}/{ComponentName}/`.
+2. **Independence:** Each layer (e.g., Card, Navigation, Button) is self-contained. NEVER import a component from one layer into another.
+3. **Duplication:** Even if components look identical, create separate components if they belong to different layers.
+4. **Self-Contained:** Components must include ALL their own styles, behavior, and types.
+
+## Storybook Dashboard Maintenance
+- **Trigger:** When creating a NEW component layer folder (e.g., `web/components/NewLayer/`) that is not yet listed on the Storybook Dashboard.
+- **Action 1 (Update Menu):** Automatically update `web/app/storybook/page.tsx` to add a new Card entry pointing to `/storybook/newlayer`.
+- **Action 2 (Create Page):** Check if `web/app/storybook/newlayer/page.tsx` exists. If not, **CREATE IT IMMEDIATELY**.
+- **Page Content:** The new page must import the new component (and any future ones in that layer) and display them in a grid layout matching the other category pages.
+
+---
+
+# 2. Layout & Styling Strategy (The "Anti-Spread" Rule)
+
+**CRITICAL: Prevent Layout Breakage & HTML Bloat**
+
+1. **The Container Pattern (Mandatory):**
+   - **NEVER** let high-level page content stretch to 100vw (unless it is a background).
+   - **ALWAYS** wrap content sections in a container: `max-width: 1440px` (or match Figma), `width: 100%`, `margin-inline: auto`.
+
+2. **Flex/Grid vs. Spacing:**
+   - **STOP** using `justify-content: space-between` for main page sections. This pushes elements to the edges.
+   - **START** using **CSS Grid** or **Flex-start** with a fixed `gap`.
+   - **Rule:** Define distance using `gap`, not the empty space of the screen.
+
+3. **Alignment:**
+   - Default to `text-align: left`. Only center if the design has a symmetrical center axis.
+   - Avoid margins on child elements; use parent `gap` property.
+
+4. **Horizontal Scroll & Carousel Protocol (CRITICAL):**
+   - **Trigger:** When generating any component that looks like a horizontal list (Carousel, Cards Row).
+   - **The "Fixed Child" Rule:**
+     - **NEVER** use `flex: 1` or `width: 100%` on items inside a scrolling list.
+     - **ALWAYS** use `flex: 0 0 auto` and a fixed width (e.g., `width: 240px`) matching the Figma node exactly.
+     - **Reason:** `flex: 1` forces items to fill the screen (responsive grid behavior), which destroys horizontal scrolling.
+   - **The "Grid Safety" Rule:**
+     - If the carousel is placed inside a CSS Grid, add `min-width: 0` to the carousel container.
+     - This prevents the Grid track from locking up and refusing to scroll.
+   - **Visual Cleanliness (The "Ghost Node" Rule):**
+     - If a Figma group has no background, border, or padding, **do not** create a `<div>`.
+     - Render the text or image tag directly to avoid redundant wrappers.
+
+---
+
+# 3. Figma Asset Workflow (Future Components)
+
+## Overview
+Applies when generating **new components** with Figma image URLs.
+**Reference:** See `web/scripts/download-figma-assets.js`.
+
+## Workflow Steps
+
+### Phase 1: Generation
+1. Create component files (`.tsx`, `.module.css`, `.index.ts`).
+2. Use Figma URLs directly in code initially (`https://www.figma.com/api/mcp/asset/...`).
+
+### Phase 2: Mapper JSON
+Create a mapper file in `web/scripts/<ComponentName>/`.
+**JSON Format:**
+```json
+{
+  "outputPath": "../public/assets/<ComponentName>/figma",
+  "assets": [
+    { "variableNameInCode": "[https://www.figma.com/api/mcp/asset/](https://www.figma.com/api/mcp/asset/)..." }
+  ]
+}

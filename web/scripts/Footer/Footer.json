@@ -1,0 +1,11 @@
+{
+  "outputPath": "../public/assets/Footer/figma",
+  "assets": [
+    {
+      "imgBrandVector": "https://www.figma.com/api/mcp/asset/4de244bb-27ad-4f74-9402-c4c20a5be570"
+    },
+    {
+      "imgLine26": "https://www.figma.com/api/mcp/asset/5841e533-9775-4024-97f2-91b554005bc4"
+    }
+  ]
+}

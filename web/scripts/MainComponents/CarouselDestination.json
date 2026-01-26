@@ -1,0 +1,8 @@
+{
+  "outputPath": "../public/assets/MainComponents/CarouselDestination/figma",
+  "assets": [
+    { "imgDestination": "https://www.figma.com/api/mcp/asset/c14754f6-d693-4119-be07-6beb990fb118" },
+    { "imgIconChevron": "https://www.figma.com/api/mcp/asset/4e5dea51-64b9-44dd-97bb-6ce1a3241380" },
+    { "imgStar": "https://www.figma.com/api/mcp/asset/6499efcd-3f7e-4f4f-993c-f5d97d36fb52" }
+  ]
+}

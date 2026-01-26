@@ -1,0 +1,237 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px 100px;
+  position: relative;
+  width: 1440px;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.backgroundImage {
+  position: absolute;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  inset: 0;
+}
+
+.container {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.eventInfo {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid #f7fdfb;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.date {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 30px;
+  position: relative;
+}
+
+.title {
+  font-family: var(--font-zalando-sans), sans-serif;
+  font-weight: 250;
+  line-height: normal;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: 50px;
+  width: 100%;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.formAtom {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 280px;
+  position: relative;
+}
+
+.formContainerInner {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.dropdown {
+  background: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid #ffffff;
+  display: flex;
+  flex: 1 0 0;
+  gap: 40px;
+  height: 40px;
+  align-items: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 10px;
+  position: relative;
+  border-radius: 3px;
+}
+
+.dropdownText {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+}
+
+.inputPlaceholder {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  position: relative;
+  flex-shrink: 0;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+.dropdownBadge {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ctaButton {
+  backdrop-filter: blur(16.5px);
+  background: #f7fdfb;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  position: relative;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.buttonText p {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.chevronIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.privacyText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #ffffff;
+  font-size: 13px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.privacyParagraph {
+  margin: 0 0 0.5em 0;
+}
+
+.privacyParagraph:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,51 @@
+.footerLanguageSelector {
+  background: #2b2a26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.languageButton {
+  background: #2b2a26;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px);
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.flag {
+  border: 1px solid rgba(189, 189, 189, 0.5);
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.text {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: var(--text-tiny, 10px);
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+{
+  "outputPath": "../public/assets/Tooltip/figma",
+  "assets": [
+    {
+      "imgRectangle83Up": "https://www.figma.com/api/mcp/asset/310ec713-fe54-4733-b9f2-718efa9b26b2"
+    },
+    {
+      "imgRectangle83Down": "https://www.figma.com/api/mcp/asset/28416830-92da-4664-9f9e-4d5256b3c25e"
+    },
+    {
+      "imgRectangle83Left": "https://www.figma.com/api/mcp/asset/334464bd-5fde-4945-9301-e04368ef368f"
+    },
+    {
+      "imgRectangle83Right": "https://www.figma.com/api/mcp/asset/1b5c687a-4f34-4255-8f6c-1171181fab1c"
+    }
+  ]
+}

@@ -20,6 +20,12 @@ const components: ComponentCard[] = [
     category: 'Interactive',
   },
   {
+    name: 'Banners',
+    description: 'Banner components including Big and Small variants, and Newsletter banners',
+    route: '/storybook/banners',
+    category: 'Display',
+  },
+  {
     name: 'Cards',
     description: 'Card components including destination cards, travel cards, blog cards, and more',
     route: '/storybook/cards',
@@ -30,6 +36,12 @@ const components: ComponentCard[] = [
     description: 'Review scores, badges, and travel specification labels',
     route: '/storybook/labels',
     category: 'Display',
+  },
+  {
+    name: 'Tooltip',
+    description: 'Tooltip components with different positions (Up, Down, Left, Right)',
+    route: '/storybook/tooltip',
+    category: 'Interactive',
   },
   {
     name: 'Icons',
@@ -73,6 +85,18 @@ const components: ComponentCard[] = [
     route: '/storybook/breadcrumb',
     category: 'Navigation',
   },
+  {
+    name: 'Footers',
+    description: 'Footer components including main footer and marquee stripe',
+    route: '/storybook/footers',
+    category: 'Layout',
+  },
+  {
+    name: 'MainComponents',
+    description: 'Main component layer including carousels and complex composite components',
+    route: '/storybook/maincomponents',
+    category: 'Layout',
+  },
 ];
 
 export default function StorybookDashboard() {
@@ -100,35 +124,86 @@ export default function StorybookDashboard() {
             >
               <div className={styles.cardHeader}>
                 <div className={styles.cardIcon}>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2L2 7L12 12L22 7L12 2Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M2 17L12 22L22 17"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M2 12L12 17L22 12"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  {component.name === 'MainComponents' ? (
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="3"
+                        y="3"
+                        width="7"
+                        height="7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <rect
+                        x="14"
+                        y="3"
+                        width="7"
+                        height="7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <rect
+                        x="3"
+                        y="14"
+                        width="7"
+                        height="7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <rect
+                        x="14"
+                        y="14"
+                        width="7"
+                        height="7"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2L2 7L12 12L22 7L12 2Z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M2 17L12 22L22 17"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M2 12L12 17L22 12"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  )}
                 </div>
                 <span className={styles.cardCategory}>{component.category}</span>
               </div>

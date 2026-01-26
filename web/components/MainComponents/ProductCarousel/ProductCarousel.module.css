@@ -1,0 +1,654 @@
+/* Container Pattern - Prevent edge-to-edge stretching */
+.productCarousel {
+  background: #eeece0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--vertical-spacing-spacing-xl, 150px) 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: var(--viewport-breakpoint, 1440px);
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--vertical-spacing-spacing-l, 40px);
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--viewport-gutter, 30px);
+  padding: 0 var(--viewport-margins, 100px);
+  position: relative;
+  width: 100%;
+}
+
+.titleContainer {
+  flex: 1 0 0;
+  min-width: 342px;
+  position: relative;
+}
+
+.title {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  font-weight: 300;
+  font-size: var(--text-title, 32px);
+  line-height: 100%;
+  color: #2b2a26;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.titleSubtext {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  font-weight: 300;
+  font-size: var(--text-title, 32px);
+  line-height: 100%;
+  color: #2b2a26;
+  margin: 0;
+}
+
+.difficultySelector {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2px;
+  align-items: center;
+  position: relative;
+}
+
+.difficultyButton {
+  background: #f7fdfb;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 5px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--viewport-gutter, 30px);
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.difficultyButton:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.difficultyButton:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.difficultyButtonActive {
+  background: #f4f097;
+}
+
+.difficultyRating {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  position: relative;
+}
+
+.difficultyLabel {
+  font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: var(--text-tiny, 10px);
+  color: #2b2a26;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+}
+
+.star {
+  width: 12px;
+  height: 13px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.starImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Carousel Wrapper */
+.carouselWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+/* Carousel (Parent: Scroll Container) */
+/* Grid Safety Rule: min-width: 0 prevents Grid track from locking up */
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--viewport-gutter, 30px);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding: 0 var(--viewport-margins, 100px);
+  position: relative;
+  width: 100%;
+  min-width: 0; /* Grid Safety Rule */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* Travel Card (Child: Fixed Width, No Growth) */
+/* Fixed Child Rule: flex: 0 0 [width] - NEVER use flex: 1 or width: 100% */
+/* Duplicated from Card/CardTravel (Property 1: On variant) */
+.cardTravel {
+  height: 411px;
+  overflow: clip;
+  position: relative;
+  border-radius: 10px;
+  width: 266px;
+  flex: 0 0 266px; /* Fixed Child Rule: flex: 0 0 [width] matching Figma exactly */
+  scroll-snap-align: start;
+}
+
+.image {
+  position: absolute;
+  aspect-ratio: 284 / 411;
+  left: -14px;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.imageElement {
+  position: absolute;
+  inset: 0;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 67.5%,
+    rgba(0, 0, 0, 0.5) 100%
+  ),
+  linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.topContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 0;
+  padding: 10px;
+  right: 0;
+  top: 0;
+}
+
+.specsTravel {
+  display: flex;
+  gap: 2px;
+  height: 25px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.difficulty {
+  backdrop-filter: blur(12px);
+  background: rgba(38, 38, 34, 0.2);
+  display: flex;
+  flex: 1 0 0;
+  gap: 5px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 30px;
+  position: relative;
+  border-radius: 3px 0 0 3px;
+}
+
+.difficultyRatingWrapper {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.duration {
+  backdrop-filter: blur(12px);
+  background: rgba(38, 38, 34, 0.2);
+  display: flex;
+  flex: 1 0 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 30px;
+  position: relative;
+}
+
+.distance {
+  backdrop-filter: blur(12px);
+  background: rgba(38, 38, 34, 0.2);
+  display: flex;
+  flex: 1 0 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+  min-width: 1px;
+  padding: 0 30px;
+  position: relative;
+  border-radius: 0 3px 3px 0;
+}
+
+.specText {
+  font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bottomContainer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  left: 0;
+  padding: 10px;
+  right: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.destinationBadge {
+  backdrop-filter: blur(12px);
+  background: #eeece0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.destinationText {
+  font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #2b2a26;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.titleText {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  line-height: 1.2;
+  min-width: 100%;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #ffffff;
+  width: min-content;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 15px;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+  flex-shrink: 0;
+  width: 88%;
+}
+
+.priceContainerOn {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.favoriteIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+}
+
+.heartIconLabel {
+  height: 11.387px;
+  position: relative;
+  width: 13.016px;
+  flex-shrink: 0;
+}
+
+.heartIconImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  width: 170px;
+}
+
+.pricingOn {
+  color: #ffffff;
+}
+
+.startingFrom {
+  font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin: 0;
+}
+
+.price {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.priceAmount {
+  font-family: var(--font-zalando-sans, 'Zalando Sans SemiExpanded'), sans-serif;
+  line-height: 1.2;
+  font-style: normal;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 20px;
+  margin: 0;
+}
+
+.priceCurrency {
+  font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+  position: relative;
+  flex-shrink: 0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.difficultyRating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.star {
+  width: 6.462px;
+  height: 7px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.starImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--viewport-margins, 100px);
+  position: relative;
+  width: 100%;
+}
+
+.viewAllButton {
+  backdrop-filter: blur(16.5px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  display: flex;
+  gap: var(--vertical-spacing-spacing-s, 10px);
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vertical-spacing-spacing-s, 10px) var(--vertical-spacing-spacing-m, 15px);
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.viewAllText {
+  font-family: var(--font-montserrat, 'Montserrat'), sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  font-size: var(--text-small-body, 12px);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #2b2a26;
+  margin: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.viewAllChevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  position: relative;
+  border-radius: 100px;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.viewAllChevronLabel {
+  height: 10.925px;
+  position: relative;
+  width: 5.881px;
+  flex-shrink: 0;
+}
+
+.viewAllChevronImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.carouselDots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 13px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.dotImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.navigationButtons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Circular Navigation Buttons (duplicated from Button/RoundedCTA) */
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 47px;
+  padding: 15px;
+  border-radius: 50px;
+  backdrop-filter: blur(16.5px);
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(38, 38, 34, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.navButton:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.navButton:active {
+  transform: translateY(0);
+}
+
+.chevronIconLabel {
+  height: 10.925px;
+  position: relative;
+  width: 5.881px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevronIconImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.navButtonPrev .chevronIconImage {
+  transform: rotate(180deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .difficultySelector {
+    width: 100%;
+  }
+
+  .carousel {
+    padding: 0 var(--viewport-margins, 60px);
+  }
+
+  .footer {
+    padding: 0 var(--viewport-margins, 60px);
+  }
+}
+
+@media (max-width: 768px) {
+  .productCarousel {
+    padding: var(--vertical-spacing-spacing-xl, 150px) 0;
+  }
+
+  .header {
+    padding: 0 var(--viewport-margins, 20px);
+  }
+
+  .carousel {
+    padding: 0 var(--viewport-margins, 20px);
+  }
+
+  .footer {
+    padding: 0 var(--viewport-margins, 20px);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

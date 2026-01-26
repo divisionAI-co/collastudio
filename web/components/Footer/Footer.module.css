@@ -1,0 +1,314 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: var(--viewport-breakpoint, 1440px);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.brandSection {
+  background: #2b2a26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.brandContainer {
+  aspect-ratio: 1440 / 244;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.mainContent {
+  background: #2b2a26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--vertical-spacing-spacing-s, 10px);
+  padding-bottom: var(--vertical-spacing-spacing-s, 10px);
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  padding-left: var(--viewport-margins, 100px);
+  padding-right: var(--viewport-margins, 100px);
+}
+
+.linksSection {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 80px;
+  align-items: flex-start;
+  padding-top: var(--vertical-spacing-spacing-l, 40px);
+  padding-bottom: var(--vertical-spacing-spacing-l, 40px);
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .linksSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.logoSection {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 182px;
+  min-height: 1px;
+  min-width: 159px;
+  position: relative;
+}
+
+.logo {
+  height: 59px;
+  position: relative;
+  flex-shrink: 0;
+  width: 96px;
+}
+
+.linksColumns {
+  display: flex;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  gap: var(--viewport-gutter, 30px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 1px;
+  min-width: 246px;
+  padding-top: var(--vertical-spacing-spacing-m, 15px);
+  padding-bottom: var(--vertical-spacing-spacing-m, 15px);
+  position: relative;
+}
+
+.linkColumn {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  min-height: 1px;
+  min-width: 150px;
+  position: relative;
+  text-align: left;
+}
+
+.columnTitle {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  flex-shrink: 0;
+  color: #f7fdfb;
+  font-size: var(--text-tiny, 10px);
+  text-transform: uppercase;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.linkItem {
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.linkText {
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  flex-shrink: 0;
+  color: #8ebfc4;
+  font-size: var(--text-small-body, 12px);
+  width: 100%;
+  white-space: pre-wrap;
+  margin: 0;
+  text-align: left;
+}
+
+.socialLanguageSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 80px;
+  padding-top: var(--vertical-spacing-spacing-l, 40px);
+  padding-bottom: var(--vertical-spacing-spacing-l, 40px);
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.socialIcons {
+  display: flex;
+  gap: var(--vertical-spacing-spacing-m, 15px);
+  align-items: flex-start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.socialIcon {
+  flex-shrink: 0;
+}
+
+.languageSelector {
+  flex-shrink: 0;
+}
+
+.divider {
+  height: 0;
+  position: relative;
+  flex-shrink: 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.dividerLine {
+  position: absolute;
+  inset: -1px 0 0 0;
+}
+
+.dividerImage {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.legalSection {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  gap: var(--vertical-spacing-spacing-xl, 30px) 150px;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: normal;
+  padding-top: var(--vertical-spacing-spacing-m, 15px);
+  padding-bottom: var(--vertical-spacing-spacing-m, 15px);
+  position: relative;
+  flex-shrink: 0;
+  text-align: left;
+  color: #9b9b99;
+  font-size: var(--text-small-body, 12px);
+  width: 100%;
+}
+
+.legalText {
+  flex: 1 0 0;
+  min-height: 1px;
+  min-width: 342px;
+  position: relative;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.legalParagraph {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.legalParagraph:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.termsText {
+  position: relative;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.paymentSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  gap: var(--viewport-gutter, 0px);
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: var(--vertical-spacing-spacing-m, 15px);
+  padding-bottom: var(--vertical-spacing-spacing-m, 15px);
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.paymentContent {
+  display: flex;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  gap: var(--vertical-spacing-spacing-m, 15px);
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 1px;
+  min-width: 1px;
+  position: relative;
+}
+
+.paymentLabel {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-montserrat), sans-serif;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 0;
+  position: relative;
+  flex-shrink: 0;
+  color: #9b9b99;
+  font-size: var(--text-small-body, 12px);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.paymentLabelText {
+  line-height: normal;
+  margin: 0;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.paymentIconWrapper {
+  position: relative;
+  flex-shrink: 0;
+  height: 27.962px;
+  width: 40.545px;
+}
+
+.paymentIcon {
+  width: 100%;
+  height: 100%;
+}

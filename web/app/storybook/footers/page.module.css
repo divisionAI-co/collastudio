@@ -1,0 +1,137 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #a0a0a0;
+  margin-bottom: 3rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.footerGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.footerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footerWrapper {
+  background-color: #2a2a2a;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.footerLabel {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.marqueeGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.marqueeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 100%;
+}
+
+.marqueeWrapper {
+  background-color: #f7fdfb;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.marqueeLabel {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.completeFooterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.completeFooterItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.completeFooterWrapper {
+  background-color: #2a2a2a;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.completeFooterLabel {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  text-align: center;
+}
